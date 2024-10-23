@@ -258,7 +258,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6481992424785871878}
-  - component: {fileID: 6481992424802242726}
   m_Layer: 0
   m_Name: CliffBig01
   m_TagString: Untagged
@@ -284,30 +283,3 @@ Transform:
   - {fileID: 6481992424785871872}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &6481992424802242726
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6481992424786040870}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.395401, y: 14.433904, z: 2.5161896}
-  m_Size: 48.04926
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.25
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6481992424784103142}
-  - screenRelativeHeight: 0.125
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6481992424784103140}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6481992424784103138}
-  m_Enabled: 1
