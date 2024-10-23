@@ -207,7 +207,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3737556252176257947, guid: fb58b068907401b4f86b1301628a9ab7, type: 3}
+    - {fileID: 3737556252176257941, guid: fb58b068907401b4f86b1301628a9ab7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb58b068907401b4f86b1301628a9ab7, type: 3}
@@ -281,7 +283,9 @@ PrefabInstance:
       value: VegetationSmall04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4974364782689170250, guid: c976407314c933f4091088895954a623, type: 3}
+    - {fileID: 4974364782689170248, guid: c976407314c933f4091088895954a623, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c976407314c933f4091088895954a623, type: 3}
@@ -469,7 +473,9 @@ PrefabInstance:
       value: VegetationLarge05_02 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8667054214511303464, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
+    - {fileID: 8667054214511303466, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
@@ -657,7 +663,9 @@ PrefabInstance:
       value: RockFloating04 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6846305681386897623, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
+    - {fileID: 6846305681386897621, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
@@ -755,7 +763,6 @@ Transform:
   - {fileID: 574089212}
   - {fileID: 1304328179}
   - {fileID: 563181053}
-  - {fileID: 636208988}
   - {fileID: 1262630060}
   - {fileID: 516150924}
   - {fileID: 1672364067}
@@ -838,99 +845,12 @@ PrefabInstance:
       value: RockSwamp01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3759874570695620140, guid: 1a720fce6a933fd4994901305c9bd5d9, type: 3}
+    - {fileID: 3759874570695620142, guid: 1a720fce6a933fd4994901305c9bd5d9, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a720fce6a933fd4994901305c9bd5d9, type: 3}
---- !u!1001 &406460739
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 357936628}
-    m_Modifications:
-    - target: {fileID: 6305194266998308939, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_Name
-      value: VegetationLarge07
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348905, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348905, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348905, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348905, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348907, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.2055764
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348907, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.2431105
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348907, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.0787488
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348907, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348907, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348907, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348907, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348907, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348907, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305194266998348907, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 6305194266998308937, guid: bcf2814cdb09f4c4b8f6f27937fb62b3, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bcf2814cdb09f4c4b8f6f27937fb62b3, type: 3}
 --- !u!1001 &441415464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1015,7 +935,9 @@ PrefabInstance:
       value: RockFloating04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6846305681386897623, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
+    - {fileID: 6846305681386897621, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
@@ -1109,7 +1031,9 @@ PrefabInstance:
       value: RockFloating03 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6000683402763591743, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
+    - {fileID: 6000683402763591741, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
@@ -1203,7 +1127,9 @@ PrefabInstance:
       value: VegetationLarge02 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2646030914997244310, guid: 0353402b5deef664aa72d22af41b5625, type: 3}
+    - {fileID: 2646030914997244308, guid: 0353402b5deef664aa72d22af41b5625, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353402b5deef664aa72d22af41b5625, type: 3}
@@ -1297,7 +1223,9 @@ PrefabInstance:
       value: RockFloating03 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6000683402763591743, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
+    - {fileID: 6000683402763591741, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
@@ -1371,7 +1299,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2957207784595193103, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
+    - {fileID: 2957207784595193101, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
@@ -1570,7 +1500,9 @@ PrefabInstance:
       value: VegetationLarge02 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2646030914997244310, guid: 0353402b5deef664aa72d22af41b5625, type: 3}
+    - {fileID: 2646030914997244308, guid: 0353402b5deef664aa72d22af41b5625, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353402b5deef664aa72d22af41b5625, type: 3}
@@ -1644,7 +1576,9 @@ PrefabInstance:
       value: VegetationSmall04 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4974364782689170250, guid: c976407314c933f4091088895954a623, type: 3}
+    - {fileID: 4974364782689170248, guid: c976407314c933f4091088895954a623, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c976407314c933f4091088895954a623, type: 3}
@@ -1744,7 +1678,9 @@ PrefabInstance:
       value: RockFloating03 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6000683402763591743, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
+    - {fileID: 6000683402763591741, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
@@ -1844,7 +1780,9 @@ PrefabInstance:
       value: VegetationLarge01_02 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7552660120498793656, guid: 7bc15f8ed2c28684492c30d11068928e, type: 3}
+    - {fileID: 7552660120498793658, guid: 7bc15f8ed2c28684492c30d11068928e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bc15f8ed2c28684492c30d11068928e, type: 3}
@@ -1973,7 +1911,9 @@ PrefabInstance:
       value: VegetationLarge05_02 (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8667054214511303464, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
+    - {fileID: 8667054214511303466, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
@@ -1982,12 +1922,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8667054214510806798, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
     type: 3}
   m_PrefabInstance: {fileID: 635840167}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &636208988 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6305194266998348907, guid: bcf2814cdb09f4c4b8f6f27937fb62b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 406460739}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &695459818 stripped
 Transform:
@@ -2173,7 +2107,9 @@ PrefabInstance:
       value: RockFloating04 (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6846305681386897623, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
+    - {fileID: 6846305681386897621, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
@@ -2257,7 +2193,9 @@ PrefabInstance:
       value: VegetationSmall04 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4974364782689170250, guid: c976407314c933f4091088895954a623, type: 3}
+    - {fileID: 4974364782689170248, guid: c976407314c933f4091088895954a623, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c976407314c933f4091088895954a623, type: 3}
@@ -2351,7 +2289,9 @@ PrefabInstance:
       value: VegetationLarge05_02 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8667054214511303464, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
+    - {fileID: 8667054214511303466, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
@@ -2545,7 +2485,9 @@ PrefabInstance:
       value: VegetationLarge01_02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7552660120498793656, guid: 7bc15f8ed2c28684492c30d11068928e, type: 3}
+    - {fileID: 7552660120498793658, guid: 7bc15f8ed2c28684492c30d11068928e, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bc15f8ed2c28684492c30d11068928e, type: 3}
@@ -2713,7 +2655,9 @@ PrefabInstance:
       value: VegetationSmall02_02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4512762668716443029, guid: 35797a316b733604fb3dfd4191499f1f, type: 3}
+    - {fileID: 4512762668716443031, guid: 35797a316b733604fb3dfd4191499f1f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35797a316b733604fb3dfd4191499f1f, type: 3}
@@ -2801,7 +2745,9 @@ PrefabInstance:
       value: RockFloating04 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6846305681386897623, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
+    - {fileID: 6846305681386897621, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
@@ -3286,7 +3232,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1621708619484020736, guid: 9e85cff8fd4614a44acc8e71eb39d419, type: 3}
+    - {fileID: 1621708619484020738, guid: 9e85cff8fd4614a44acc8e71eb39d419, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e85cff8fd4614a44acc8e71eb39d419, type: 3}
@@ -3380,7 +3328,9 @@ PrefabInstance:
       value: VegetationLarge05_02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8667054214511303464, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
+    - {fileID: 8667054214511303466, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
@@ -3468,7 +3418,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3737556252176257947, guid: fb58b068907401b4f86b1301628a9ab7, type: 3}
+    - {fileID: 3737556252176257941, guid: fb58b068907401b4f86b1301628a9ab7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb58b068907401b4f86b1301628a9ab7, type: 3}
@@ -3552,7 +3504,9 @@ PrefabInstance:
       value: VegetationSmall04 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4974364782689170250, guid: c976407314c933f4091088895954a623, type: 3}
+    - {fileID: 4974364782689170248, guid: c976407314c933f4091088895954a623, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c976407314c933f4091088895954a623, type: 3}
@@ -3651,7 +3605,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1621708619484020736, guid: 9e85cff8fd4614a44acc8e71eb39d419, type: 3}
+    - {fileID: 1621708619484020738, guid: 9e85cff8fd4614a44acc8e71eb39d419, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e85cff8fd4614a44acc8e71eb39d419, type: 3}
@@ -3853,7 +3809,9 @@ PrefabInstance:
       value: VegetationLarge03_02 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2910863102790004775, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
+    - {fileID: 2910863102790004773, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
@@ -4041,7 +3999,9 @@ PrefabInstance:
       value: RockFloating04 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6846305681386897623, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
+    - {fileID: 6846305681386897621, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
@@ -4179,7 +4139,9 @@ PrefabInstance:
       value: RockFloating03 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6000683402763591743, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
+    - {fileID: 6000683402763591741, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
@@ -4279,7 +4241,9 @@ PrefabInstance:
       value: VegetationLarge02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2646030914997244310, guid: 0353402b5deef664aa72d22af41b5625, type: 3}
+    - {fileID: 2646030914997244308, guid: 0353402b5deef664aa72d22af41b5625, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0353402b5deef664aa72d22af41b5625, type: 3}
@@ -4367,7 +4331,9 @@ PrefabInstance:
       value: RockFloating04 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6846305681386897623, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
+    - {fileID: 6846305681386897621, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
@@ -4740,7 +4706,9 @@ PrefabInstance:
       value: VegetationSmall02_02 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4512762668716443029, guid: 35797a316b733604fb3dfd4191499f1f, type: 3}
+    - {fileID: 4512762668716443031, guid: 35797a316b733604fb3dfd4191499f1f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35797a316b733604fb3dfd4191499f1f, type: 3}
@@ -4863,7 +4831,7 @@ Transform:
   m_GameObject: {fileID: 1361970046}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.12, y: 6.35, z: 33.17}
+  m_LocalPosition: {x: -2.59, y: 6.35, z: -6.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5054,7 +5022,9 @@ PrefabInstance:
       value: VegetationLarge03_02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2910863102790004775, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
+    - {fileID: 2910863102790004773, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
@@ -5188,7 +5158,9 @@ PrefabInstance:
       value: VegetationLarge03_02 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2910863102790004775, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
+    - {fileID: 2910863102790004773, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
@@ -5564,7 +5536,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2957207784595193103, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
+    - {fileID: 2957207784595193101, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
@@ -5720,7 +5694,9 @@ PrefabInstance:
       value: VegetationLarge05_02 (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8667054214511303464, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
+    - {fileID: 8667054214511303466, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
@@ -6008,7 +5984,9 @@ PrefabInstance:
       value: CliffBig01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6481992424786040864, guid: 469212e88ab20f44cbfb2c0c9255f610, type: 3}
+    - {fileID: 6481992424786040866, guid: 469212e88ab20f44cbfb2c0c9255f610, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 469212e88ab20f44cbfb2c0c9255f610, type: 3}
@@ -6096,7 +6074,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2957207784595193103, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
+    - {fileID: 2957207784595193101, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
@@ -6190,7 +6170,9 @@ PrefabInstance:
       value: RockFloating03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6000683402763591743, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
+    - {fileID: 6000683402763591741, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
@@ -6661,7 +6643,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2957207784595193103, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
+    - {fileID: 2957207784595193101, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
@@ -6741,7 +6725,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2994144516204390170, guid: 7d4945b9af939834d9bfc1d7f766a96b, type: 3}
+    - {fileID: 2994144516204390168, guid: 7d4945b9af939834d9bfc1d7f766a96b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d4945b9af939834d9bfc1d7f766a96b, type: 3}
@@ -6809,7 +6795,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2957207784595193103, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
+    - {fileID: 2957207784595193101, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08ac4b3b2bea9494db0e0122d339738d, type: 3}
@@ -7002,7 +6990,9 @@ PrefabInstance:
       value: CliffBig01 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6481992424786040864, guid: 469212e88ab20f44cbfb2c0c9255f610, type: 3}
+    - {fileID: 6481992424786040866, guid: 469212e88ab20f44cbfb2c0c9255f610, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 469212e88ab20f44cbfb2c0c9255f610, type: 3}
@@ -7096,7 +7086,9 @@ PrefabInstance:
       value: VegetationLarge05_02 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8667054214511303464, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
+    - {fileID: 8667054214511303466, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
@@ -7184,7 +7176,9 @@ PrefabInstance:
       value: VegetationLarge05_02 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8667054214511303464, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
+    - {fileID: 8667054214511303466, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5b5e10ddd6d4e14c92d088b73af1dfa, type: 3}
@@ -7278,7 +7272,9 @@ PrefabInstance:
       value: CliffBig01 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6481992424786040864, guid: 469212e88ab20f44cbfb2c0c9255f610, type: 3}
+    - {fileID: 6481992424786040866, guid: 469212e88ab20f44cbfb2c0c9255f610, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 469212e88ab20f44cbfb2c0c9255f610, type: 3}
