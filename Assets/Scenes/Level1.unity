@@ -136,6 +136,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockFloating01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3737556252176257937, guid: fb58b068907401b4f86b1301628a9ab7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737556252176257943, guid: fb58b068907401b4f86b1301628a9ab7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3737556252176551857, guid: fb58b068907401b4f86b1301628a9ab7,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -282,6 +292,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: VegetationSmall04
       objectReference: {fileID: 0}
+    - target: {fileID: 4974364782689170252, guid: c976407314c933f4091088895954a623,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974364782689170254, guid: c976407314c933f4091088895954a623,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4974364782689170250, guid: c976407314c933f4091088895954a623, type: 3}
@@ -307,6 +327,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCover01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 291448483359156941, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
@@ -467,10 +492,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303468, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
         type: 3}
       propertyPath: m_Name
       value: VegetationLarge05_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -497,6 +532,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCover01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 291448483359156941, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
@@ -661,6 +701,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RockFloating04 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897619, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -839,10 +889,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3759874570695620136, guid: 1a720fce6a933fd4994901305c9bd5d9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3759874570695620138, guid: 1a720fce6a933fd4994901305c9bd5d9,
         type: 3}
       propertyPath: m_Name
       value: RockSwamp01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3759874570695620138, guid: 1a720fce6a933fd4994901305c9bd5d9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -933,6 +993,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RockFloating04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897619, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1030,6 +1100,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockFloating03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591737, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591739, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6000683402763591743, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
@@ -1125,6 +1205,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VegetationLarge02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2646030914997244304, guid: 0353402b5deef664aa72d22af41b5625,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2646030914997244306, guid: 0353402b5deef664aa72d22af41b5625,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1222,6 +1312,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockFloating03 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591737, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591739, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6000683402763591743, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
@@ -1247,6 +1347,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VegetationMedium01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957207784595193097, guid: 08ac4b3b2bea9494db0e0122d339738d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957207784595193099, guid: 08ac4b3b2bea9494db0e0122d339738d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2957207784595611945, guid: 08ac4b3b2bea9494db0e0122d339738d,
         type: 3}
@@ -1322,7 +1432,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &540015655
 Transform:
@@ -1499,6 +1609,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: VegetationLarge02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2646030914997244304, guid: 0353402b5deef664aa72d22af41b5625,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2646030914997244306, guid: 0353402b5deef664aa72d22af41b5625,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2646030914997244310, guid: 0353402b5deef664aa72d22af41b5625, type: 3}
@@ -1574,6 +1694,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VegetationSmall04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974364782689170252, guid: c976407314c933f4091088895954a623,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974364782689170254, guid: c976407314c933f4091088895954a623,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1677,6 +1807,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockFloating03 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591737, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591739, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6000683402763591743, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
@@ -1774,10 +1914,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7552660120498793660, guid: 7bc15f8ed2c28684492c30d11068928e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7552660120498793662, guid: 7bc15f8ed2c28684492c30d11068928e,
         type: 3}
       propertyPath: m_Name
       value: VegetationLarge01_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552660120498793662, guid: 7bc15f8ed2c28684492c30d11068928e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1905,10 +2055,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303468, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
         type: 3}
       propertyPath: m_Name
       value: VegetationLarge05_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2106,6 +2266,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockFloating04 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897619, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6846305681386897623, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
@@ -2191,6 +2361,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VegetationSmall04 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974364782689170252, guid: c976407314c933f4091088895954a623,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974364782689170254, guid: c976407314c933f4091088895954a623,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2283,10 +2463,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303468, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
         type: 3}
       propertyPath: m_Name
       value: VegetationLarge05_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2319,10 +2509,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: VegetationMedium04_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3111227890565108997, guid: 9fa6f24d7a9abd347b7a14c4f8cf9ddc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3111227890565108999, guid: 9fa6f24d7a9abd347b7a14c4f8cf9ddc,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111227890565108999, guid: 9fa6f24d7a9abd347b7a14c4f8cf9ddc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3111227890565138725, guid: 9fa6f24d7a9abd347b7a14c4f8cf9ddc,
         type: 3}
@@ -2479,10 +2679,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7552660120498793660, guid: 7bc15f8ed2c28684492c30d11068928e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7552660120498793662, guid: 7bc15f8ed2c28684492c30d11068928e,
         type: 3}
       propertyPath: m_Name
       value: VegetationLarge01_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552660120498793662, guid: 7bc15f8ed2c28684492c30d11068928e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2509,6 +2719,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCover01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 291448483359156941, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
@@ -2649,10 +2864,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4512762668716443025, guid: 35797a316b733604fb3dfd4191499f1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4512762668716443027, guid: 35797a316b733604fb3dfd4191499f1f,
         type: 3}
       propertyPath: m_Name
       value: VegetationSmall02_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512762668716443027, guid: 35797a316b733604fb3dfd4191499f1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2744,6 +2969,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockFloating04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897619, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6846305681386897623, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
@@ -2775,6 +3010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCover01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 291448483359156941, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
@@ -3132,6 +3372,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HangingMoss02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2000355249667370282, guid: 4ae69f10b2fc9b7428dbbb967983ec71,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3156,10 +3401,20 @@ PrefabInstance:
       propertyPath: m_FadeMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1621708619484020740, guid: 9e85cff8fd4614a44acc8e71eb39d419,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1621708619484020742, guid: 9e85cff8fd4614a44acc8e71eb39d419,
         type: 3}
       propertyPath: m_Name
       value: RockChunk01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621708619484020742, guid: 9e85cff8fd4614a44acc8e71eb39d419,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1621708619484453926, guid: 9e85cff8fd4614a44acc8e71eb39d419,
         type: 3}
@@ -3368,10 +3623,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303468, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
         type: 3}
       propertyPath: m_Name
       value: VegetationLarge05_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3392,6 +3657,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RockFloating01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737556252176257937, guid: fb58b068907401b4f86b1301628a9ab7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737556252176257943, guid: fb58b068907401b4f86b1301628a9ab7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3737556252176551857, guid: fb58b068907401b4f86b1301628a9ab7,
         type: 3}
@@ -3549,6 +3824,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: VegetationSmall04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4974364782689170252, guid: c976407314c933f4091088895954a623,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974364782689170254, guid: c976407314c933f4091088895954a623,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4974364782689170250, guid: c976407314c933f4091088895954a623, type: 3}
@@ -3575,10 +3860,20 @@ PrefabInstance:
       propertyPath: m_FadeMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1621708619484020740, guid: 9e85cff8fd4614a44acc8e71eb39d419,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1621708619484020742, guid: 9e85cff8fd4614a44acc8e71eb39d419,
         type: 3}
       propertyPath: m_Name
       value: RockChunk01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621708619484020742, guid: 9e85cff8fd4614a44acc8e71eb39d419,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1621708619484453926, guid: 9e85cff8fd4614a44acc8e71eb39d419,
         type: 3}
@@ -3854,6 +4149,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: VegetationLarge03_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2910863102790004769, guid: 9baaa9687d7865c48ac44d147f6d1dfd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910863102790004771, guid: 9baaa9687d7865c48ac44d147f6d1dfd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2910863102790004775, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
@@ -3950,6 +4255,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HangingMoss02
       objectReference: {fileID: 0}
+    - target: {fileID: 2000355249667370282, guid: 4ae69f10b2fc9b7428dbbb967983ec71,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4043,6 +4353,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RockFloating04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897619, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4184,6 +4504,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockFloating03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591737, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591739, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6000683402763591743, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
@@ -4286,6 +4616,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: VegetationLarge02
       objectReference: {fileID: 0}
+    - target: {fileID: 2646030914997244304, guid: 0353402b5deef664aa72d22af41b5625,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2646030914997244306, guid: 0353402b5deef664aa72d22af41b5625,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2646030914997244310, guid: 0353402b5deef664aa72d22af41b5625, type: 3}
@@ -4376,6 +4716,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockFloating04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897619, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6846305681386897623, guid: 11aa281cc23caa147bfa0d4108fc202d, type: 3}
@@ -4413,6 +4763,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCover01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 291448483359156941, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
@@ -4501,6 +4856,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCover01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 291448483359156941, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
@@ -4681,6 +5041,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockLedge01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4705204255304679236, guid: 95378ab6107787c4a8c94dca562c2497,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705204255304679238, guid: 95378ab6107787c4a8c94dca562c2497,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4705204255304679234, guid: 95378ab6107787c4a8c94dca562c2497, type: 3}
@@ -4778,10 +5148,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4512762668716443025, guid: 35797a316b733604fb3dfd4191499f1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4512762668716443027, guid: 35797a316b733604fb3dfd4191499f1f,
         type: 3}
       propertyPath: m_Name
       value: VegetationSmall02_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512762668716443027, guid: 35797a316b733604fb3dfd4191499f1f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4802,6 +5182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCover01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 291448483359156941, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
@@ -4934,6 +5319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCover01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 291448483359156941, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
@@ -5099,6 +5489,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: VegetationLarge03_02
       objectReference: {fileID: 0}
+    - target: {fileID: 2910863102790004769, guid: 9baaa9687d7865c48ac44d147f6d1dfd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910863102790004771, guid: 9baaa9687d7865c48ac44d147f6d1dfd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2910863102790004775, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
@@ -5235,6 +5635,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: VegetationLarge03_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2910863102790004769, guid: 9baaa9687d7865c48ac44d147f6d1dfd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910863102790004771, guid: 9baaa9687d7865c48ac44d147f6d1dfd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2910863102790004775, guid: 9baaa9687d7865c48ac44d147f6d1dfd, type: 3}
@@ -5260,6 +5670,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCover01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 291448483359156941, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
@@ -5355,6 +5770,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GroundCover01
       objectReference: {fileID: 0}
+    - target: {fileID: 291448483359156941, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5442,6 +5862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCover01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 291448483359156941, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
@@ -5543,6 +5968,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: VegetationMedium01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2957207784595193097, guid: 08ac4b3b2bea9494db0e0122d339738d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957207784595193099, guid: 08ac4b3b2bea9494db0e0122d339738d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2957207784595611945, guid: 08ac4b3b2bea9494db0e0122d339738d,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5632,6 +6067,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundCover02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2505031141911779783, guid: 355b7f6942603ce4585b44ec832155c8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4552083978586642606, guid: 355b7f6942603ce4585b44ec832155c8,
         type: 3}
@@ -5766,10 +6206,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303468, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
         type: 3}
       propertyPath: m_Name
       value: VegetationLarge05_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -5890,6 +6340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HangingVine2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7367664659341949736, guid: eb24b71eaeb67ab448729d79b84035ad,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8257820280889271506, guid: eb24b71eaeb67ab448729d79b84035ad,
         type: 3}
@@ -6056,10 +6511,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6481992424786040868, guid: 469212e88ab20f44cbfb2c0c9255f610,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6481992424786040870, guid: 469212e88ab20f44cbfb2c0c9255f610,
         type: 3}
       propertyPath: m_Name
       value: CliffBig01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481992424786040870, guid: 469212e88ab20f44cbfb2c0c9255f610,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -6080,6 +6545,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VegetationMedium01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957207784595193097, guid: 08ac4b3b2bea9494db0e0122d339738d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957207784595193099, guid: 08ac4b3b2bea9494db0e0122d339738d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2957207784595611945, guid: 08ac4b3b2bea9494db0e0122d339738d,
         type: 3}
@@ -6247,6 +6722,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockFloating03
       objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591737, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591739, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6000683402763591743, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1, type: 3}
@@ -6278,6 +6763,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HangingVine2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7367664659341949736, guid: eb24b71eaeb67ab448729d79b84035ad,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8257820280889271506, guid: eb24b71eaeb67ab448729d79b84035ad,
         type: 3}
@@ -6422,10 +6912,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: VegetationMedium04_02
       objectReference: {fileID: 0}
+    - target: {fileID: 3111227890565108997, guid: 9fa6f24d7a9abd347b7a14c4f8cf9ddc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3111227890565108999, guid: 9fa6f24d7a9abd347b7a14c4f8cf9ddc,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3111227890565108999, guid: 9fa6f24d7a9abd347b7a14c4f8cf9ddc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3111227890565138725, guid: 9fa6f24d7a9abd347b7a14c4f8cf9ddc,
         type: 3}
@@ -6681,6 +7181,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: VegetationMedium01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2957207784595193097, guid: 08ac4b3b2bea9494db0e0122d339738d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957207784595193099, guid: 08ac4b3b2bea9494db0e0122d339738d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2957207784595611945, guid: 08ac4b3b2bea9494db0e0122d339738d,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -6783,6 +7293,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: CliffEdge03
       objectReference: {fileID: 0}
+    - target: {fileID: 2994144516204390172, guid: 7d4945b9af939834d9bfc1d7f766a96b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2994144516204390174, guid: 7d4945b9af939834d9bfc1d7f766a96b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2994144516204428092, guid: 7d4945b9af939834d9bfc1d7f766a96b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6883,6 +7403,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VegetationMedium01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957207784595193097, guid: 08ac4b3b2bea9494db0e0122d339738d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957207784595193099, guid: 08ac4b3b2bea9494db0e0122d339738d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2957207784595611945, guid: 08ac4b3b2bea9494db0e0122d339738d,
         type: 3}
@@ -7039,6 +7569,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockLedge01
       objectReference: {fileID: 0}
+    - target: {fileID: 4705204255304679236, guid: 95378ab6107787c4a8c94dca562c2497,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705204255304679238, guid: 95378ab6107787c4a8c94dca562c2497,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7026563196425395875, guid: 95378ab6107787c4a8c94dca562c2497, type: 3}
     - {fileID: 8732712101779840225, guid: 95378ab6107787c4a8c94dca562c2497, type: 3}
@@ -7158,10 +7698,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6481992424786040868, guid: 469212e88ab20f44cbfb2c0c9255f610,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6481992424786040870, guid: 469212e88ab20f44cbfb2c0c9255f610,
         type: 3}
       propertyPath: m_Name
       value: CliffBig01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481992424786040870, guid: 469212e88ab20f44cbfb2c0c9255f610,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7621859400197485994, guid: 469212e88ab20f44cbfb2c0c9255f610, type: 3}
@@ -7255,10 +7805,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303468, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
         type: 3}
       propertyPath: m_Name
       value: VegetationLarge05_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -7345,10 +7905,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303468, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
         type: 3}
       propertyPath: m_Name
       value: VegetationLarge05_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667054214511303470, guid: a5b5e10ddd6d4e14c92d088b73af1dfa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -7441,10 +8011,20 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6481992424786040868, guid: 469212e88ab20f44cbfb2c0c9255f610,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6481992424786040870, guid: 469212e88ab20f44cbfb2c0c9255f610,
         type: 3}
       propertyPath: m_Name
       value: CliffBig01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481992424786040870, guid: 469212e88ab20f44cbfb2c0c9255f610,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
