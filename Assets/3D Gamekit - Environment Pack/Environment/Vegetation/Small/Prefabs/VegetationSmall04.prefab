@@ -175,6 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4974364782688808812}
+  - component: {fileID: 5003776239368799454}
   m_Layer: 0
   m_Name: VegetationSmall04
   m_TagString: Untagged
@@ -200,6 +201,27 @@ Transform:
   - {fileID: 4974364782688808810}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5003776239368799454
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4974364782689170252}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.1263878, z: 1.7894118}
+  m_Center: {x: 0, y: 0.5631939, z: 0.23140585}
 --- !u!1 &4974364782689170254
 GameObject:
   m_ObjectHideFlags: 0
