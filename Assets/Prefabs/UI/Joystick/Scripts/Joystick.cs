@@ -1,16 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Joystick : MonoBehaviour
+using UnityEngine.EventSystems;
+public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
-    // Start is called before the first frame update
+    public void OnDrag(PointerEventData eventData)
+    {
+        Debug.Log($"On Drag Fired {eventData.position}");
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Debug.Log("PointerDown");
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        Debug.Log("PointerUp");
+    }
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
