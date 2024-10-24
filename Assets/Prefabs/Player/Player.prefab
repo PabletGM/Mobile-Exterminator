@@ -49,6 +49,7 @@ MonoBehaviour:
   moveStick: {fileID: 0}
   characterController: {fileID: 7232314140847835461}
   moveSpeed: 0
+  TurnSpeed: 20
 --- !u!143 &7232314140847835461
 CharacterController:
   m_ObjectHideFlags: 0
@@ -68,9 +69,9 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2.01
+  m_Height: 2.08
   m_Radius: 0.23
-  m_SlopeLimit: 0
+  m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001

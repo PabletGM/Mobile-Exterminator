@@ -1121,6 +1121,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3166887928968042311, guid: 9d24ac047da41154c9d8320a341bf9e3,
         type: 3}
+      propertyPath: aimStick
+      value: 
+      objectReference: {fileID: 7163644157542680090}
+    - target: {fileID: 3166887928968042311, guid: 9d24ac047da41154c9d8320a341bf9e3,
+        type: 3}
       propertyPath: moveSpeed
       value: 20
       objectReference: {fileID: 0}
@@ -1134,10 +1139,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7019632420976753959, guid: 9d24ac047da41154c9d8320a341bf9e3,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7232314140847835461, guid: 9d24ac047da41154c9d8320a341bf9e3,
         type: 3}
       propertyPath: m_SlopeLimit
-      value: 90
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 7232314140847835461, guid: 9d24ac047da41154c9d8320a341bf9e3,
         type: 3}
@@ -8741,6 +8751,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b602eb05a0840ca4c9e4caf4a355365e, type: 3}
+--- !u!114 &7163644157542680090 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 531038604572793079, guid: b602eb05a0840ca4c9e4caf4a355365e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7163644157542680089}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e079cd326408f64aae2b82ef6f6bbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

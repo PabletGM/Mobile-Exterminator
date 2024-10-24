@@ -7,10 +7,14 @@ using UnityEngine.Windows;
 public class Player : MonoBehaviour
 {
     [SerializeField] Joystick moveStick;
+    [SerializeField] Joystick aimStick;
+
     [SerializeField] CharacterController characterController;
     [SerializeField] float moveSpeed = 20f;
     [SerializeField] float TurnSpeed = 20f;
+    
     Vector2 moveInput;
+    Vector2 aimInput;
 
     //reference of the camera
     Camera mainCam;
@@ -21,20 +25,27 @@ public class Player : MonoBehaviour
     {
         //we ask if there has been any update on stickValue
         //we suscribe the function  to the event
-        moveStick.onStickValueUpdated += moveStickmoveStick;
+        moveStick.onStickValueUpdated += moveStickUpdated;
+        aimStick.onStickValueUpdated += aimStickUpdated;
+
         //camera reference to the camera with MainCamera tag
         mainCam = Camera.main;
         cameraController = FindObjectOfType<CameraController>();
     }
 
-    void moveStickmoveStick(Vector2 inputValue)
+    private void aimStickUpdated(Vector2 inputVal)
+    {
+        aimInput = inputVal;
+    }
+
+    void moveStickUpdated(Vector2 inputValue)
     {
         //we update the value of moveInput on realTime of the inputValue of the joystick
         moveInput = inputValue;
     }
 
-    // Update is called once per frame
-    void Update()
+    //so this function can make the worldDirection to the independent input touch of the joysticks if it is called
+    Vector3 StickInputToWorldDirection(Vector2 inputVal)
     {
         //find the right direction of the camera in the local orientation
         Vector3 rightDir = mainCam.transform.right;
@@ -50,19 +61,40 @@ public class Player : MonoBehaviour
 
         //(rightDir * moveInput.x) + (upDir * moveInput.y): This adds the movement in the right/left direction
         // Calculate movement direction based on joystick input
-        Vector3 moveDirection = (rightDir * moveInput.x) + (upDir * moveInput.y);
+        Vector3 worldDirection = (rightDir * inputVal.x) + (upDir * inputVal.y);
+        return worldDirection;
+    }
 
-        //and the forward/backward direction, creating a vector that represents the total movement based on both axes of the input.
-        characterController.Move(moveDirection * Time.deltaTime * moveSpeed);
-        
-        //so if the player moves to the right or left we change the camera controller rotation
-        if(moveInput.magnitude !=0)
+    // Update is called once per frame
+    void Update()
+    {
+        Vector3 moveDirection = StickInputToWorldDirection(moveInput);
+        //if we dont touch the aim joystick, it looks where we are moving
+        Vector3 aimDirection = moveDirection;
+
+        //if we touch the aim joystick
+        if(aimInput.magnitude !=0)
+        {
+            //calculate aimDirection
+            aimDirection = StickInputToWorldDirection(aimInput);
+        }
+
+        //if there is aimDirection we calculate the rotation of the player
+        if(aimDirection.magnitude != 0)
         {
             //0.5f(if it is 1 it is b, if it is 0 it is a)
             float turnLerpAlpha = TurnSpeed * Time.deltaTime;
-            //tells the player to look where he is moving, a rotation smooth so lerp between a and b in 
-            Quaternion targetRotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(moveDirection, Vector3.up), turnLerpAlpha);
+            //tells the player to look where the aimDirection, a rotation smooth so lerp between a and b in 
+            Quaternion targetRotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(aimDirection, Vector3.up), turnLerpAlpha);
             transform.rotation = targetRotation;
+        }
+
+        //and the forward/backward direction, creating a vector that represents the total movement based on both axes of the input.
+        characterController.Move(moveDirection * Time.deltaTime * moveSpeed);
+        //so if the player moves to the right or left we change the camera controller rotation
+        if(moveInput.magnitude !=0)
+        {
+           
 
             if(cameraController != null)
             {
