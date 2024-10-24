@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 
     //reference of the camera
     Camera mainCam;
+    CameraController cameraController;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour
         moveStick.onStickValueUpdated += moveStickmoveStick;
         //camera reference to the camera with MainCamera tag
         mainCam = Camera.main;
+        cameraController = FindObjectOfType<CameraController>();
     }
 
     void moveStickmoveStick(Vector2 inputValue)
@@ -47,5 +49,12 @@ public class Player : MonoBehaviour
         //(rightDir * moveInput.x) + (upDir * moveInput.y): This adds the movement in the right/left direction
         //and the forward/backward direction, creating a vector that represents the total movement based on both axes of the input.
         characterController.Move(( (rightDir *moveInput.x) + (upDir*moveInput.y) ) * Time.deltaTime * moveSpeed);
+        
+        //so if the player moves to the right or left we change the camera controller rotation
+        if(cameraController!=null && moveInput.magnitude !=0)
+        {
+            //the degrees you want that the camera moves
+            cameraController.AddYawInput(moveInput.x);
+        }
     }
 }
