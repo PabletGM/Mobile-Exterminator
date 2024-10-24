@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngine.Windows;
 
 public class Player : MonoBehaviour
@@ -65,22 +66,18 @@ public class Player : MonoBehaviour
         return worldDirection;
     }
 
-    // Update is called once per frame
-    void Update()
+    //if the aim joystick is touched, we calculate the aimDirection and the player rotation
+    void AimDirectionRotationPlayer(Vector3 aimDirection)
     {
-        Vector3 moveDirection = StickInputToWorldDirection(moveInput);
-        //if we dont touch the aim joystick, it looks where we are moving
-        Vector3 aimDirection = moveDirection;
-
         //if we touch the aim joystick
-        if(aimInput.magnitude !=0)
+        if (aimInput.magnitude != 0)
         {
             //calculate aimDirection
             aimDirection = StickInputToWorldDirection(aimInput);
         }
 
         //if there is aimDirection we calculate the rotation of the player
-        if(aimDirection.magnitude != 0)
+        if (aimDirection.magnitude != 0)
         {
             //0.5f(if it is 1 it is b, if it is 0 it is a)
             float turnLerpAlpha = TurnSpeed * Time.deltaTime;
@@ -88,21 +85,38 @@ public class Player : MonoBehaviour
             Quaternion targetRotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(aimDirection, Vector3.up), turnLerpAlpha);
             transform.rotation = targetRotation;
         }
+    }
 
-        //and the forward/backward direction, creating a vector that represents the total movement based on both axes of the input.
-        characterController.Move(moveDirection * Time.deltaTime * moveSpeed);
+    //if the player moves to the right or left the camera controller rotates
+    void CameraControllerRotationRightLeft()
+    {
         //so if the player moves to the right or left we change the camera controller rotation
-        if(moveInput.magnitude !=0)
+        if (moveInput.magnitude != 0)
         {
-           
-
-            if(cameraController != null)
+            if (cameraController != null)
             {
                 //the degrees you want that the camera moves
                 cameraController.AddYawInput(moveInput.x);
             }
         }
-
-        
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Vector3 moveDirection = StickInputToWorldDirection(moveInput);
+        //if we dont touch the aim joystick, it looks where we are moving
+        Vector3 aimDirection = moveDirection;
+
+        //calculate aimDirection and RotationPlayer
+        AimDirectionRotationPlayer(aimDirection);
+
+        //and the forward/backward direction, creating a vector that represents the total movement based on both axes of the input.
+        characterController.Move(moveDirection * Time.deltaTime * moveSpeed);
+
+        //if the player moves to the right or left the camera controller rotates
+        CameraControllerRotationRightLeft();
+    }
+
+   
 }
