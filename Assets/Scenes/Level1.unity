@@ -1137,7 +1137,7 @@ PrefabInstance:
     - target: {fileID: 7232314140847835461, guid: 9d24ac047da41154c9d8320a341bf9e3,
         type: 3}
       propertyPath: m_SlopeLimit
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7232314140847835461, guid: 9d24ac047da41154c9d8320a341bf9e3,
         type: 3}
@@ -8538,6 +8538,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1185651786688390602, guid: ccec2f11c0b0bd14bbfc7d76a6dc3d35,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1185651786688390602, guid: ccec2f11c0b0bd14bbfc7d76a6dc3d35,
         type: 3}
       propertyPath: m_LocalPosition.y

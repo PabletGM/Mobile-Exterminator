@@ -46,9 +46,13 @@ public class Player : MonoBehaviour
         //rightDir * moveInput.x multiplies the direction by the input value to control how much the character should move to the right (or left if negative).
         //upDir* moveInput.y adjusts the movement in the forward/ backward direction based on the input value.
 
+
         //(rightDir * moveInput.x) + (upDir * moveInput.y): This adds the movement in the right/left direction
+        // Calculate movement direction based on joystick input
+        Vector3 moveDirection = (rightDir * moveInput.x) + (upDir * moveInput.y);
+
         //and the forward/backward direction, creating a vector that represents the total movement based on both axes of the input.
-        characterController.Move(( (rightDir *moveInput.x) + (upDir*moveInput.y) ) * Time.deltaTime * moveSpeed);
+        characterController.Move(moveDirection * Time.deltaTime * moveSpeed);
         
         //so if the player moves to the right or left we change the camera controller rotation
         if(cameraController!=null && moveInput.magnitude !=0)
@@ -56,5 +60,9 @@ public class Player : MonoBehaviour
             //the degrees you want that the camera moves
             cameraController.AddYawInput(moveInput.x);
         }
+
+        //tells the player to look where he is moving
+        Quaternion targetRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
+        transform.rotation = targetRotation;
     }
 }
