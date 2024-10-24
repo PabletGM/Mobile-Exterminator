@@ -8,7 +8,8 @@ public class Player : MonoBehaviour
 {
     [SerializeField] Joystick moveStick;
     [SerializeField] CharacterController characterController;
-    [SerializeField] float moveSpeed;
+    [SerializeField] float moveSpeed = 20f;
+    [SerializeField] float TurnSpeed = 20f;
     Vector2 moveInput;
 
     //reference of the camera
@@ -55,14 +56,21 @@ public class Player : MonoBehaviour
         characterController.Move(moveDirection * Time.deltaTime * moveSpeed);
         
         //so if the player moves to the right or left we change the camera controller rotation
-        if(cameraController!=null && moveInput.magnitude !=0)
+        if(moveInput.magnitude !=0)
         {
-            //the degrees you want that the camera moves
-            cameraController.AddYawInput(moveInput.x);
+            //0.5f(if it is 1 it is b, if it is 0 it is a)
+            float turnLerpAlpha = TurnSpeed * Time.deltaTime;
+            //tells the player to look where he is moving, a rotation smooth so lerp between a and b in 
+            Quaternion targetRotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(moveDirection, Vector3.up), turnLerpAlpha);
+            transform.rotation = targetRotation;
+
+            if(cameraController != null)
+            {
+                //the degrees you want that the camera moves
+                cameraController.AddYawInput(moveInput.x);
+            }
         }
 
-        //tells the player to look where he is moving
-        Quaternion targetRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
-        transform.rotation = targetRotation;
+        
     }
 }
