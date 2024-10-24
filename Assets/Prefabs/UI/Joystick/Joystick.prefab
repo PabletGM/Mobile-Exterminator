@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThumbStickTrans: {fileID: 4267654975641204435}
   BackgroundTrans: {fileID: 3960427148739431737}
+  CenterTrans: {fileID: 1878259810141279870}
 --- !u!1 &2704789634095439784
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.827451, g: 0.45882353, b: 0.5353645, a: 0.42745098}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

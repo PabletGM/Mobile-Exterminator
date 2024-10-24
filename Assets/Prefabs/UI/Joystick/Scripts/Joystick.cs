@@ -7,9 +7,10 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
     //transform of the thumbStick
     [SerializeField] RectTransform ThumbStickTrans;
     [SerializeField] RectTransform BackgroundTrans;
+    [SerializeField] RectTransform CenterTrans;
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log($"On Drag Fired {eventData.position}");
+        
 
         //calculate the position the touch is right now
         Vector2 TouchPos = eventData.position;
@@ -27,21 +28,15 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("PointerDown");
+        //it centers all the joystick where the thumb touch the screen
+        BackgroundTrans.position = eventData.position;
+        ThumbStickTrans.position = eventData.position;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        Debug.Log("PointerUp");
-    }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
+        //when you leave the touch it restores the original position
+        BackgroundTrans.position = CenterTrans.position;
+        ThumbStickTrans.position = BackgroundTrans.position;
     }
 }
