@@ -22,6 +22,9 @@ public  abstract class Weapon : MonoBehaviour
    public void Init(GameObject owner)
    {
         Owner = owner;
+        //we are not holding the weapon yet
+        //if not all the weapons will be activated by default
+        UnEquip();
    }
 
    public void Equip()
