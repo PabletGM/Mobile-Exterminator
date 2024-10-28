@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 using UnityEngine.Windows;
 
@@ -20,6 +21,11 @@ public class Player : MonoBehaviour
     //reference of the camera
     Camera mainCam;
     CameraController cameraController;
+    //reference of the animator
+    Animator animator;
+
+
+  
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +38,8 @@ public class Player : MonoBehaviour
         //camera reference to the camera with MainCamera tag
         mainCam = Camera.main;
         cameraController = FindObjectOfType<CameraController>();
+        //animator reference
+        animator = GetComponent<Animator>();
     }
 
     private void aimStickUpdated(Vector2 inputVal)
@@ -87,6 +95,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    void MovePlayer(Vector3 moveDirection)
+    {
+        //and the forward/backward direction, creating a vector that represents the total movement based on both axes of the input.
+        characterController.Move(moveDirection * Time.deltaTime * moveSpeed);
+
+        //DEBUG
+        //Debug.Log(moveDirection);
+    }
+
     //if the player moves to the right or left the camera controller rotates
     void CameraControllerRotationRightLeft()
     {
@@ -115,11 +132,33 @@ public class Player : MonoBehaviour
         //calculate aimDirection and RotationPlayer
         AimDirectionRotationPlayer(aimDirection);
 
-        //and the forward/backward direction, creating a vector that represents the total movement based on both axes of the input.
-        characterController.Move(moveDirection * Time.deltaTime * moveSpeed);
+        //calculate the move
+        MovePlayer(moveDirection);
 
-       
+        //calculate the animation
+        ChangeDirectionForwardRightVectorBlendTreeAnimation(moveDirection);
+
+
     }
+
+    //DOT PRODUCT = producto escalar = cos(angle between vectors) * |a| * |b|
+    void ChangeDirectionForwardRightVectorBlendTreeAnimation(Vector3 moveDirection)
+    {
+        //we need this two variables to the blend tree animation
+        //the Dot Product gives a value between -1 and 1,
+        //1(moveDirection is transform.forward), 0(moveDirection is perpendicular to transform.forward),
+        //-1(moveDirection is opposite to transform.forward)
+
+        //to know how much the character moves forward or backward
+        float forward = Vector3.Dot(moveDirection, transform.forward);
+        ////to know how much the character moves right or left.
+        float right = Vector3.Dot(moveDirection, transform.right);
+
+        //change the variables
+        animator.SetFloat("ForwardSpeed", forward);
+        animator.SetFloat("RightSpeed", right);
+    }
+
     // Update is called once per frame
     void Update()
     {

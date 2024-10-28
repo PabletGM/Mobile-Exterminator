@@ -37,7 +37,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
         // normalizes the joystick input to a value between -1 and 1 for both the x and y axes
         //joystick on center, inputVal = 0,0
         //When the joystick is fully pushed in any direction, the value will be (1, 0), (0, 1), (-1, 0), or (0, -1), depending on the direction.
-        Vector2 inputVal = localOffset / BackgroundTrans.sizeDelta.x / 2;
+        Vector2 inputVal = localOffset / (BackgroundTrans.sizeDelta.x / 2);
         //This line checks if there are any subscribers to the onStickValueUpdated event using the ?. operator.
         //If there are, it invokes the event and passes the normalized inputVal as a parameter.
         onStickValueUpdated?.Invoke(inputVal);
