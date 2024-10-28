@@ -1094,6 +1094,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 223623154559168124, guid: 9d24ac047da41154c9d8320a341bf9e3,
+        type: 3}
+      propertyPath: m_Name
+      value: RifleAttachSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 223623154559168124, guid: 9d24ac047da41154c9d8320a341bf9e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: RifleAttachSlot
+      objectReference: {fileID: 0}
     - target: {fileID: 455234273591120652, guid: 9d24ac047da41154c9d8320a341bf9e3,
         type: 3}
       propertyPath: m_LocalPosition.x

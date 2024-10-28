@@ -5,6 +5,13 @@ using UnityEngine;
 //parent class that all the weapons will have
 public  abstract class Weapon : MonoBehaviour
 {
+    [SerializeField] string AttachSlotTag;
+
+    public string GetAttachSlotTag()
+    { 
+        return AttachSlotTag; 
+    }
+
    public GameObject Owner
    {
         get;
