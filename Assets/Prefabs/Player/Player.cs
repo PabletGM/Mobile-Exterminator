@@ -12,9 +12,10 @@ public class Player : MonoBehaviour
     [SerializeField] Joystick aimStick;
 
     [SerializeField] CharacterController characterController;
-    [SerializeField] float moveSpeed = 20f;
-    [SerializeField] float TurnSpeed = 20f;
-    
+    [SerializeField] float moveSpeed;
+    [SerializeField] float TurnSpeed;
+    [SerializeField] float AnimTurnSpeedSmooth;
+
     Vector2 moveInput;
     Vector2 aimInput;
 
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
     CameraController cameraController;
     //reference of the animator
     Animator animator;
+
+    float animatorTurnSpeed;
 
 
   
@@ -77,31 +80,75 @@ public class Player : MonoBehaviour
     //if the aim joystick is touched, we calculate the aimDirection and the player rotation
     void AimDirectionRotationPlayer(Vector3 aimDirection)
     {
+        AimDirection(aimDirection);
+    }
+
+    void AimDirection(Vector3 aimDirection)
+    {
         //if we touch the aim joystick
         if (aimInput.magnitude != 0)
         {
             //calculate aimDirection
             aimDirection = StickInputToWorldDirection(aimInput);
         }
+        AimRotation(aimDirection);
+    }
 
+    void AimRotation(Vector3 aimDirection)
+    {
+        float currentTurnSpeed = 0;
         //if there is aimDirection we calculate the rotation of the player
         if (aimDirection.magnitude != 0)
         {
+            Quaternion previousRotation = transform.rotation;
+
             //0.5f(if it is 1 it is b, if it is 0 it is a)
             float turnLerpAlpha = TurnSpeed * Time.deltaTime;
             //tells the player to look where the aimDirection, a rotation smooth so lerp between a and b in 
             Quaternion targetRotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(aimDirection, Vector3.up), turnLerpAlpha);
             transform.rotation = targetRotation;
+
+            Quaternion currentRotation = transform.rotation;
+            //calculate turn speed
+            currentTurnSpeed = CalculateCurrentTurnSpeed(previousRotation, currentRotation, currentTurnSpeed, aimDirection);
         }
+        //lerping the turnSpeed
+        animatorTurnSpeed = Mathf.Lerp(animatorTurnSpeed,currentTurnSpeed, Time.deltaTime * AnimTurnSpeedSmooth);
+
+        SetAnimatorFloatTurningSpeedVariable(animatorTurnSpeed);
+    }
+
+    //turn speed of the aim stick of the player
+    float CalculateCurrentTurnSpeed(Quaternion previousRotation, Quaternion currentRotation, float currentTurnSpeed, Vector3 aimDirection)
+    {
+        //turnSpeed = rotationDelta / Time.deltaTime
+
+        //the direction of the rotation, positive or negative
+        //The dot product provides a value that helps determine the relative alignment of aimDirection and transform.right, positive,zero or negative
+        // positive if aimDirection is aligned with transform.right
+        // zero if they are perpendicular = 
+        // negative if the aimDirection is in the opposite direction of transform.right
+        //check if it is bigger than 0
+        float Dir = Vector3.Dot(aimDirection, transform.right) > 0 ? 1: -1;
+
+        //First we get RotationDelta in degrees = angle between previous and currentRotation
+        //how much we have rotated in the current frame
+        float rotationDelta = Quaternion.Angle(previousRotation, currentRotation) * Dir;
+        //turnSpeed = changeInRotation(rotationDelta) / timePassedSinceLastFrame(Time.deltaTime, vuelta de cada update)
+        currentTurnSpeed = rotationDelta / Time.deltaTime;
+
+        return currentTurnSpeed;
+    }
+
+    void SetAnimatorFloatTurningSpeedVariable(float currentTurnSpeed)
+    {
+        animator.SetFloat("turningSpeed", currentTurnSpeed);
     }
 
     void MovePlayer(Vector3 moveDirection)
     {
         //and the forward/backward direction, creating a vector that represents the total movement based on both axes of the input.
         characterController.Move(moveDirection * Time.deltaTime * moveSpeed);
-
-        //DEBUG
-        //Debug.Log(moveDirection);
     }
 
     //if the player moves to the right or left the camera controller rotates
