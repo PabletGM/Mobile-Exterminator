@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         moveStick.onStickValueUpdated += moveStickUpdated;
         aimStick.onStickValueUpdated += aimStickUpdated;
         //we suscribe to the tap event
-        aimStick.onStickTaped += SwitchWeapon;
+        aimStick.onStickTaped += StartSwitchWeapon;
 
         //camera reference to the camera with MainCamera tag
         mainCam = Camera.main;
@@ -50,7 +50,15 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void SwitchWeapon()
+    private void StartSwitchWeapon()
+    {
+        //first we make the animation
+        animator.SetTrigger("switchWeapon"); 
+    }
+
+    //when the animation finishes we make the change of weapon
+    //it is called by an animationEvent
+    public void SwitchWeapon()
     {
         inventoryComponent.NextWeapon();
     }
