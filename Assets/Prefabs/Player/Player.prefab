@@ -31,6 +31,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7019632420990577257}
   m_LocalEulerAnglesHint: {x: -5.952, y: 73.86, z: -83.339}
+--- !u!1 &631806169681487254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3538358162044823940}
+  m_Layer: 0
+  m_Name: PistolAttachSlot
+  m_TagString: PistolSlotTag
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3538358162044823940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631806169681487254}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.42991978, y: 0.42062515, z: -0.5074291, w: 0.61705697}
+  m_LocalPosition: {x: 0.013, y: 0.039, z: -0.007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7019632420990577257}
+  m_LocalEulerAnglesHint: {x: -5.952, y: 73.86, z: -83.339}
 --- !u!1 &5487766726186100400
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,10 +176,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initWeaponPrefabs:
+  - {fileID: 5885354111389106755, guid: c27fac968c817c947ab58859775b902e, type: 3}
   - {fileID: 1993272497069749062, guid: 68afde78b15e168419e3da47857c1027, type: 3}
   defaultWeaponSlot: {fileID: 7019632420990577257}
   weaponSlots:
   - {fileID: 3657864792499851311}
+  - {fileID: 3538358162044823940}
 --- !u!1001 &7019632420990449285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -225,6 +258,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3657864792499851311}
+    - targetCorrespondingSourceObject: {fileID: 400620, guid: a5674d01884853d4e8f2386a171e14d9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3538358162044823940}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5674d01884853d4e8f2386a171e14d9, type: 3}
 --- !u!4 &7019632420990577257 stripped
