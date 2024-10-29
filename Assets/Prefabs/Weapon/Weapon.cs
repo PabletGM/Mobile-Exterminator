@@ -5,7 +5,11 @@ using UnityEngine;
 //parent class that all the weapons will have
 public  abstract class Weapon : MonoBehaviour
 {
+    //each weapon has a tag
     [SerializeField] string AttachSlotTag;
+
+    //each weapon has a AnimationController overriding some basic animations
+    [SerializeField] AnimatorOverrideController overrideController;
 
     public string GetAttachSlotTag()
     { 
@@ -30,6 +34,7 @@ public  abstract class Weapon : MonoBehaviour
    public void Equip()
    {
         gameObject.SetActive(true);
+        Owner.GetComponent<Animator>().runtimeAnimatorController =overrideController;
    }
 
     public void UnEquip()

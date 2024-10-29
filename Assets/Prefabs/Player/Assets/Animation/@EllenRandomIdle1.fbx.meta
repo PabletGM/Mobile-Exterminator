@@ -680,7 +680,7 @@ ModelImporter:
     second: Ellen_Body
   - first:
       74: 7400000
-    second: EllenRandomIdle_1
+    second: Default_Idle
   - first:
       95: 9500000
     second: //RootNode
@@ -725,7 +725,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: EllenRandomIdle_1
+      name: Default_Idle
       takeName: Take 001
       internalID: 0
       firstFrame: 1
