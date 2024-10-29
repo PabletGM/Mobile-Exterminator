@@ -16,6 +16,9 @@ public class Player : MonoBehaviour
     [SerializeField] float TurnSpeed;
     [SerializeField] float AnimTurnSpeedSmooth;
 
+    [Header("Inventory")]
+    [SerializeField] InventoryComponent inventoryComponent;
+
     Vector2 moveInput;
     Vector2 aimInput;
 
@@ -37,12 +40,19 @@ public class Player : MonoBehaviour
         //we suscribe the function  to the event
         moveStick.onStickValueUpdated += moveStickUpdated;
         aimStick.onStickValueUpdated += aimStickUpdated;
+        //we suscribe to the tap event
+        aimStick.onStickTaped += SwitchWeapon;
 
         //camera reference to the camera with MainCamera tag
         mainCam = Camera.main;
         cameraController = FindObjectOfType<CameraController>();
         //animator reference
         animator = GetComponent<Animator>();
+    }
+
+    private void SwitchWeapon()
+    {
+        inventoryComponent.NextWeapon();
     }
 
     private void aimStickUpdated(Vector2 inputVal)

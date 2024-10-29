@@ -1174,12 +1174,12 @@ PrefabInstance:
     - target: {fileID: 3166887928968042311, guid: 9d24ac047da41154c9d8320a341bf9e3,
         type: 3}
       propertyPath: TurnSpeed
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3166887928968042311, guid: 9d24ac047da41154c9d8320a341bf9e3,
         type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3166887928968042311, guid: 9d24ac047da41154c9d8320a341bf9e3,
         type: 3}
@@ -1189,7 +1189,7 @@ PrefabInstance:
     - target: {fileID: 3166887928968042311, guid: 9d24ac047da41154c9d8320a341bf9e3,
         type: 3}
       propertyPath: AnimTurnSpeedSmooth
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3538358162044823940, guid: 9d24ac047da41154c9d8320a341bf9e3,
         type: 3}

@@ -52,7 +52,7 @@ public class InventoryComponent : MonoBehaviour
         NextWeapon();
     }
 
-    private void NextWeapon()
+    public void NextWeapon()
     {
         //to be 0
         int nextWeaponIndex = currentWeaponIndex + 1;

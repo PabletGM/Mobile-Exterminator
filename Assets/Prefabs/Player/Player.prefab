@@ -116,6 +116,7 @@ MonoBehaviour:
   moveSpeed: 0
   TurnSpeed: 20
   AnimTurnSpeedSmooth: 0
+  inventoryComponent: {fileID: 2773937792537822179}
 --- !u!143 &7232314140847835461
 CharacterController:
   m_ObjectHideFlags: 0

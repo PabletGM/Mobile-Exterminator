@@ -13,12 +13,16 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
 
     //método that has the same firm(parameter in Vector2 and no out params) can be associated to this delegate
     public delegate void OnStickInputValueUpdated(Vector2 inputVal);
+    public delegate void OnStickTaped();
     //event, a way that lets other components or scripts suscribe  to be notified when something happen
     //this type of event is OnStickInputValueUpdated, meaning any method matching the signature of that delegate
     //(accepting a Vector2 and returning void) can subscribe to this event
     //When the event is "fired" (or invoked), it will notify all subscribed methods and execute them with the provided value as an argument.
     public event OnStickInputValueUpdated onStickValueUpdated;
+    public event OnStickTaped onStickTaped;
 
+
+    bool bWasDragging;
     public void OnDrag(PointerEventData eventData)
     {   
         //calculate the position the touch is right now
@@ -41,6 +45,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
         //This line checks if there are any subscribers to the onStickValueUpdated event using the ?. operator.
         //If there are, it invokes the event and passes the normalized inputVal as a parameter.
         onStickValueUpdated?.Invoke(inputVal);
+        bWasDragging = true;
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -48,6 +53,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
         //it centers all the joystick where the thumb touch the screen
         BackgroundTrans.position = eventData.position;
         ThumbStickTrans.position = eventData.position;
+        bWasDragging = false;
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -59,5 +65,12 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
         //This line checks if there are any subscribers to the onStickValueUpdated event using the ?. operator.
         //If there are, it invokes the event and passes the normalized inputVal as a parameter.
         onStickValueUpdated?.Invoke(Vector2.zero);
+
+        //was it a Drag or a tap?
+        if(!bWasDragging)
+        {
+            //event fired if not dragging
+            onStickTaped?.Invoke();
+        }
     }
 }
