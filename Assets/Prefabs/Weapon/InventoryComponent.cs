@@ -82,4 +82,9 @@ public class InventoryComponent : MonoBehaviour
         //we put the active weapon index
         currentWeaponIndex = weaponIndex;
     }
+
+    internal Weapon GetActiveWeapon()
+    {
+        return weapons[currentWeaponIndex];
+    }
 }

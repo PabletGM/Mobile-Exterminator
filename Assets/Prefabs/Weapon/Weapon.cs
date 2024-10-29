@@ -8,9 +8,14 @@ public  abstract class Weapon : MonoBehaviour
     //each weapon has a tag
     [SerializeField] string AttachSlotTag;
 
+    //each weapon has a tag
+    [SerializeField] float AttackRateMult = 1f;
+
     //each weapon has a AnimationController overriding some basic animations
     [SerializeField] AnimatorOverrideController overrideController;
 
+    //abstract function because we want that the children has access and override it
+    public abstract void Attack();
     public string GetAttachSlotTag()
     { 
         return AttachSlotTag; 
@@ -35,6 +40,7 @@ public  abstract class Weapon : MonoBehaviour
    {
         gameObject.SetActive(true);
         Owner.GetComponent<Animator>().runtimeAnimatorController =overrideController;
+        Owner.GetComponent <Animator>().SetFloat("AttackRateMult", AttackRateMult);
    }
 
     public void UnEquip()

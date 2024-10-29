@@ -50,6 +50,11 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    public void AttackPoint()
+    {
+        inventoryComponent.GetActiveWeapon().Attack();
+    }
+
     private void StartSwitchWeapon()
     {
         //first we make the animation
@@ -76,6 +81,8 @@ public class Player : MonoBehaviour
             animator.SetBool("attacking", false);
         }
     }
+
+
 
     void moveStickUpdated(Vector2 inputValue)
     {

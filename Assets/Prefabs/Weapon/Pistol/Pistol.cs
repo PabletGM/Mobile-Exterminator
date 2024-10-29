@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Pistol : Weapon
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] AimComponent aimComp;
+    public override void Attack()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //get the object the player is aiming
+        GameObject target = aimComp.GetAimTarget();
+        Debug.Log($"aiming at {target}");
     }
 }
