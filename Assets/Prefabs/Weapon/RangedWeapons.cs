@@ -13,7 +13,11 @@ public class RangedWeapons : Weapon
         //get the object the player is aiming
         // output parameter aimDir, which will store the aiming direction calculated in the method.
         GameObject target = aimComp.GetAimTarget(out Vector3 aimDir);
-        DamageGameObject(target, Damage);
+        if (target != null)
+        {
+            DamageGameObject(target, Damage);
+        }
+       
 
         //we put the bulletVFX rotation with the aimDir
         bulletVFX.transform.rotation = Quaternion.LookRotation(aimDir);
