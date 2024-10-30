@@ -41,7 +41,7 @@ public class Enemy : MonoBehaviour
         if (animator != null)
         {
             //trigger death animation
-            animator.SetTrigger("Dead");
+            animator.SetTrigger("Dead ");
         }
     }
 
