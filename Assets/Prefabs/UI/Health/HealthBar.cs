@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,12 +22,21 @@ public class HealthBar : MonoBehaviour
         healthSlider.value = health/maxHealth;
     }
 
+    internal void OnOwnerDead()
+    {
+        Destroy(gameObject);
+    }
+
     private void Update()
     {
         //lets make sure we are always in the UISpace
         //we transform the HealthBar._attachPoint (in the enemy head) to UI coordinates
-        Vector3 attachScreenPoint = Camera.main.WorldToScreenPoint(_attachPoint.position);
-        //we put the healthBar on that UIPoint.
-        transform.position = attachScreenPoint;
+        if(_attachPoint != null)
+        {
+            Vector3 attachScreenPoint = Camera.main.WorldToScreenPoint(_attachPoint.position);
+            //we put the healthBar on that UIPoint.
+            transform.position = attachScreenPoint;
+        }
+       
     }
 }

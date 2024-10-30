@@ -21,5 +21,7 @@ public class HealthUIComponent : MonoBehaviour
         newHealthBar.Init(healthBarAttachPoint);
         //we suscribe to the event onHealthChange SetHeadSliderValue method to change UI when enemy is damaged
         healthComponent.onHealthChange += newHealthBar.SetHealthSliderValue;
+        //we suscribe to the event onHealthEmpty to quit UI
+        healthComponent.onHealthEmpty += newHealthBar.OnOwnerDead;
     }
 }
