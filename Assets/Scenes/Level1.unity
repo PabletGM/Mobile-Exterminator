@@ -854,6 +854,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1463,6 +1468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RockFloating03 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591737, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6000683402763591737, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
         type: 3}
@@ -2241,6 +2251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6000683402763591737, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591737, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2837,6 +2852,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RockFloating04 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
         type: 3}
@@ -3540,6 +3560,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RockFloating04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
         type: 3}
@@ -4339,6 +4364,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3737556252176257937, guid: fb58b068907401b4f86b1301628a9ab7,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737556252176257937, guid: fb58b068907401b4f86b1301628a9ab7,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4974,6 +5004,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5333,6 +5368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RockFloating04 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6846305681386897617, guid: 11aa281cc23caa147bfa0d4108fc202d,
         type: 3}
@@ -7206,6 +7246,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RockFloating03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000683402763591737, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6000683402763591737, guid: 9fc0ceab2f2f2f046b923bd72cfdbbf1,
         type: 3}
