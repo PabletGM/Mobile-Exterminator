@@ -8710,6 +8710,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361970275022334026, guid: ccec2f11c0b0bd14bbfc7d76a6dc3d35,
         type: 3}
+      propertyPath: m_RenderingPath
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361970275022334026, guid: ccec2f11c0b0bd14bbfc7d76a6dc3d35,
+        type: 3}
       propertyPath: near clip plane
       value: 1
       objectReference: {fileID: 0}

@@ -400,7 +400,7 @@ QualitySettings:
     excludedTargetPlatforms: []
   m_TextureMipmapLimitGroupNames: []
   m_PerPlatformDefaultQuality:
-    Android: 4
+    Android: 2
     Lumin: 5
     Nintendo 3DS: 5
     Nintendo Switch: 5
