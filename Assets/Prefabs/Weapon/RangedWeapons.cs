@@ -11,9 +11,12 @@ public class RangedWeapons : Weapon
     public override void Attack()
     {
         //get the object the player is aiming
-        GameObject target = aimComp.GetAimTarget();
+        // output parameter aimDir, which will store the aiming direction calculated in the method.
+        GameObject target = aimComp.GetAimTarget(out Vector3 aimDir);
         DamageGameObject(target, Damage);
 
+        //we put the bulletVFX rotation with the aimDir
+        bulletVFX.transform.rotation = Quaternion.LookRotation(aimDir);
         //we emit the emission burst value of the particle system editor 
         bulletVFX.Emit(bulletVFX.emission.GetBurst(0).maxCount);
     }

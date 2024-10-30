@@ -9,11 +9,11 @@ public class AimComponent : MonoBehaviour
     [SerializeField] LayerMask aimMask;
     
     //get the target that the raycast is aiming
-    public GameObject GetAimTarget()
+    public GameObject GetAimTarget(out Vector3 aimDir)
     {
         Vector3 aimStart = Muzzle.position;
-
-        if(Physics.Raycast(aimStart, GetAimDirection(), out RaycastHit hitInfo, aimRange, aimMask))
+        aimDir = GetAimDirection();
+        if(Physics.Raycast(aimStart, aimDir, out RaycastHit hitInfo, aimRange, aimMask))
         {
             return hitInfo.collider.gameObject;
         }
