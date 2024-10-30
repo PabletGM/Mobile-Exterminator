@@ -42,5 +42,7 @@ public class HealthComponent : MonoBehaviour
         {
             onHealthEmpty?.Invoke();
         }
+
+        Debug.Log($"{gameObject.name}, taking damage: {amount}, health is now: {health}");
     }
 }
