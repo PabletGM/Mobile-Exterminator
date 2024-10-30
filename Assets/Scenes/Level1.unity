@@ -6323,6 +6323,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1422835612867903243, guid: 0a28ac2ef0db42f4b814ac87a891512e,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4240833797884143528, guid: 0a28ac2ef0db42f4b814ac87a891512e,
         type: 3}
       propertyPath: m_LocalScale.x
