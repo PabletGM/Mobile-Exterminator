@@ -31,11 +31,9 @@ public class HealthComponent : MonoBehaviour
         {
             onTakeDamage?.Invoke(health, amount, maxhealth);
         }
-        //if there is regenerate health
-        else
-        {
-            onHealthChange?.Invoke(health, amount, maxhealth);
-        }
+        //if there is regenerate health or 0 damage
+        onHealthChange?.Invoke(health, amount, maxhealth);
+        
 
         //if there is no health
         if(health <= 0)

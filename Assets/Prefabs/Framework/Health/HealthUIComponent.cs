@@ -8,6 +8,8 @@ public class HealthUIComponent : MonoBehaviour
     [SerializeField] HealthBar healthBarToSpawn;
     //position of the HealthBar refered to Enemy
     [SerializeField] Transform healthBarAttachPoint;
+    //reference of HealthComponent
+    [SerializeField] HealthComponent healthComponent;
 
     private void Start()
     {
@@ -17,5 +19,7 @@ public class HealthUIComponent : MonoBehaviour
         HealthBar newHealthBar = Instantiate(healthBarToSpawn, inGameUI.transform);
         //we put the position of the health bar
         newHealthBar.Init(healthBarAttachPoint);
+        //we suscribe to the event onHealthChange SetHeadSliderValue method to change UI when enemy is damaged
+        healthComponent.onHealthChange += newHealthBar.SetHealthSliderValue;
     }
 }
