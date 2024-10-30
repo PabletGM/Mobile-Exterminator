@@ -53,6 +53,7 @@ MonoBehaviour:
   overrideController: {fileID: 22100000, guid: 9dab9ae4b2319174999d8aaff227c40b, type: 2}
   aimComp: {fileID: 8502763560629925713}
   Damage: 5
+  bulletVFX: {fileID: 3140154916873376474}
 --- !u!114 &8502763560629925713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1082,7 +1083,7 @@ ParticleSystem:
         serializedVersion: 2
         minMaxState: 0
         scalar: 6
-        minScalar: 30
+        minScalar: 3
         maxCurve:
           serializedVersion: 2
           m_Curve:
