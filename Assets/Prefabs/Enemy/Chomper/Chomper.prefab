@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 7641406688960219817}
   - component: {fileID: 212734207073447892}
   - component: {fileID: 8522298798591298182}
+  - component: {fileID: 3405074724311364758}
   m_Layer: 0
   m_Name: Chomper
   m_TagString: Untagged
@@ -150,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthComponent: {fileID: 841424474056261136}
   animator: {fileID: 3140023524955873653}
+  perceptionComponent: {fileID: 3405074724311364758}
 --- !u!95 &3140023524955873653
 Animator:
   serializedVersion: 5
@@ -199,6 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e9def3b88e665499a2f7f8cad70644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  forgettingTime: 3
   awareDistance: 2
 --- !u!114 &8522298798591298182
 MonoBehaviour:
@@ -212,9 +215,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1faaa9bfe790847469a401637f22beff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  forgettingTime: 3
   sightDistance: 5
   sightHalfAngle: 40
   eyeHeight: 1
+--- !u!114 &3405074724311364758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6403032068596921869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d25b586e34a944bbff116864247d8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  senses:
+  - {fileID: 8522298798591298182}
+  - {fileID: 212734207073447892}
 --- !u!1001 &6172859622925857977
 PrefabInstance:
   m_ObjectHideFlags: 0
