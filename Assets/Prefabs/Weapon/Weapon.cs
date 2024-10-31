@@ -55,7 +55,7 @@ public  abstract class Weapon : MonoBehaviour
         if (healthComp != null)
         {
             //make change Health
-            healthComp.changeHealth(-amount);
+            healthComp.changeHealth(-amount, Owner);
         }
     }
 }

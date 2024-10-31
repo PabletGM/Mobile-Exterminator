@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthComponent : MonoBehaviour
 {
     public delegate void OnHealthChange(float health, float amount, float maxHealth);
-    public delegate void OnTakeDamage(float health, float amount, float maxHealth);
+    public delegate void OnTakeDamage(float health, float amount, float maxHealth, GameObject Instigator);
     public delegate void OnHealthEmpty();
 
     [SerializeField] float health = 100;
@@ -15,7 +15,7 @@ public class HealthComponent : MonoBehaviour
     public event OnTakeDamage onTakeDamage;
     public event OnHealthEmpty onHealthEmpty;
 
-    public void changeHealth(float amount)
+    public void changeHealth(float amount, GameObject Instigator)
     {
         //no damage
         if(amount == 0 || health == 0)
@@ -29,7 +29,7 @@ public class HealthComponent : MonoBehaviour
         //if there is damage
         if(amount < 0)
         {
-            onTakeDamage?.Invoke(health, amount, maxhealth);
+            onTakeDamage?.Invoke(health, amount, maxhealth, Instigator);
         }
         //if there is regenerate health or 0 damage
         onHealthChange?.Invoke(health, amount, maxhealth);
