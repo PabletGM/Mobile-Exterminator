@@ -13,6 +13,10 @@ public abstract class SenseComponent : MonoBehaviour
     //creates a dictionary that serves as a data structure for managing active forgetting routines associated with each PerceptionStimuli object.
     //ForgettingRoutines: This is the dictionary where keys are PerceptionStimuli and values are Coroutine objects.
     Dictionary<PerceptionStimuli, Coroutine> ForgettingRoutines = new Dictionary<PerceptionStimuli, Coroutine>();
+
+    public delegate void OnPerceptionUpdated(PerceptionStimuli stimuli, bool successfullySensed);
+
+    public event OnPerceptionUpdated onPerceptionUpdated;
     
     [SerializeField]
     float forgettingTime = 3f;
@@ -68,7 +72,8 @@ public abstract class SenseComponent : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log($"I just sensed {stimuli.gameObject}");
+                        //check if there is any suscribe method to the event onPerceptionUpdated and invokes them with true parameter
+                        onPerceptionUpdated?.Invoke(stimuli, true);
                     }
                    
                 }
@@ -106,9 +111,12 @@ public abstract class SenseComponent : MonoBehaviour
     public IEnumerator ForgetStimuli(PerceptionStimuli stimuli)
     {
         yield return new WaitForSeconds(forgettingTime); // Waits for 5 seconds
-        
-        ForgettingRoutines.Remove(stimuli);    
+        //takes out the forgetting routine of the dictionary
+        ForgettingRoutines.Remove(stimuli);
+        //now, it is not percepted
+        //check if there is any suscribe method to the event onPerceptionUpdated and invokes them with false parameter
+        onPerceptionUpdated?.Invoke(stimuli, false);
 
-        Debug.Log($"I lost track of sensed {stimuli.gameObject}");
+        
     }
 }
