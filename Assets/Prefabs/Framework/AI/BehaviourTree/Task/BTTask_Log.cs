@@ -19,6 +19,6 @@ public class BTTask_Log : BTNode
             Debug.Log(Log);
             return NodeResult.Success;
         }
-        return NodeResult.InProgress;
+        return NodeResult.Failure;
     }
 }

@@ -10,6 +10,11 @@ public abstract class Compositor : BTNode
     //the current node we are workig on
    LinkedListNode<BTNode> currentChild = null;
 
+    public void AddChild(BTNode newChild)
+    {
+        children.AddLast(newChild);
+    }
+
     protected override NodeResult Execute()
     {
         //if there is not any node
