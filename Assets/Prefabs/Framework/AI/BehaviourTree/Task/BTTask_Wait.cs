@@ -20,7 +20,7 @@ public class BTTask_Wait : BTNode
         {
             return NodeResult.Success;
         }
-        Debug.Log($"Wait started with duration: {WaitTime}");
+        //Debug.Log($"Wait started with duration: {WaitTime}");
         timeElapsed = 0;
         return NodeResult.InProgress;
     }
@@ -31,10 +31,10 @@ public class BTTask_Wait : BTNode
         timeElapsed += Time.deltaTime;
         if(timeElapsed >= WaitTime) 
         {
-            Debug.Log("Wait finished");
+            //Debug.Log("Wait finished");
             return NodeResult.Success;        
         }
-        Debug.Log($"Waiting for {timeElapsed}");
+        /*Debug.Log($"Waiting for {timeElapsed}");*/
         return NodeResult.InProgress;
     }
 }
