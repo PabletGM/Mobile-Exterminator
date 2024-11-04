@@ -12,13 +12,34 @@ public class ChomperBehaviour : BehaviourTree
             //log
         BTTask_Log log = new BTTask_Log("Logging");
 
-        //create the sequencer
-        Sequencer Root = new Sequencer();
+
+ //=====================================================================================       
+        //create the sequencer, it will make the 2 of them
+        Sequencer RootSeq = new Sequencer();
         //add childs
-        Root.AddChild(log);
-        Root.AddChild(waitTask);
+        RootSeq.AddChild(log);
+        RootSeq.AddChild(waitTask);
 
         //say the rootNode that it is a Sequencer
-        rootNode = Root;
+        rootNode = RootSeq;
+//======================================================================================
+
+        //create the selector, it will make the 2 of them
+        Selector RootSel = new Selector();
+        //add childs
+        RootSel.AddChild(log);
+        RootSel.AddChild(waitTask);
+
+//======================================================================================
+        ////say the rootNode that it is a Sequencer
+        //rootNode = RootSeq;
+
+        //say the rootNode that it is a Selector
+        rootNode = RootSel;
+
+
+
     }
+
+
 }
