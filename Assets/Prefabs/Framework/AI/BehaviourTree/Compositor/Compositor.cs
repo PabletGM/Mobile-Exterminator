@@ -22,6 +22,11 @@ public abstract class Compositor : BTNode
         return NodeResult.InProgress;
     }
 
+    protected BTNode GetCurrentChild()
+    {
+        return currentChild.Value;
+    }
+
     //to go to next node on children LinkedList
     protected bool Next()
     {
