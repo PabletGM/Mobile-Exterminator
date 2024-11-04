@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+//A behaviour sense that knows when it is hit and has their own ForgetStimuli
 public class HitSense : SenseComponent
 {
     //we need the healthComponent reference to call the event

@@ -6,11 +6,12 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 /// <summary>
-/// What stimulus are we currently sensing and which one is the highest priority or the target to attack.
+/// What senses are we currently sensing and which one is the highest priority or the target to attack.
+/// What behaviour senses( always aware, sight, hit...) the AI has.
 /// </summary>
 public class PerceptionComponent : MonoBehaviour
 {
-    //We have to keep Count of all the Senses, and each sense must have a number of
+    //We have to keep Count of all the Senses, and each sense must have a number
     [SerializeField] SenseComponent[] senses;
 
     //We will use LinkedList:
@@ -20,13 +21,11 @@ public class PerceptionComponent : MonoBehaviour
     //   -Pointer(or Reference): A link to the next node in the sequence.
     LinkedList<PerceptionStimuli> currentlyPerceivedStimulis = new LinkedList<PerceptionStimuli>();
 
+    //the target of the AI to focus if there is more than 1.
     PerceptionStimuli targetStimuli;
-
-
 
     //event when change the target
     public delegate void OnPerceptionTargetChanged(GameObject target, bool sensed);
-
     public event OnPerceptionTargetChanged onPerceptionTargetChanged;
 
     private void Start()

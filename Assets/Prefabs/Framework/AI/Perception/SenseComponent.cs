@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //You can access it because it is abstract
+
+//base class of the senses with ForgettingRoutines and hereditary behaviour
 public abstract class SenseComponent : MonoBehaviour
 {
     // registeredStimulis will be shared across all instances of the class in which it's declared,
     // allowing any object to access it directly through the class without needing an instance.
+
+    //list with all the GameObjects that can be attackable or registered by the AI
     static List<PerceptionStimuli> registeredStimulis = new List<PerceptionStimuli>();
     //list of perceived stimulis
     List<PerceptionStimuli> PerceivableStimuli = new List<PerceptionStimuli>();
@@ -21,6 +25,7 @@ public abstract class SenseComponent : MonoBehaviour
     [SerializeField]
     float forgettingTime = 3f;
 
+    //adds all the senses to the list of registeredSenses
     static public void RegisterStimuli(PerceptionStimuli stimuli)
     {
         if(registeredStimulis.Contains(stimuli))
@@ -32,6 +37,7 @@ public abstract class SenseComponent : MonoBehaviour
     }
 
 
+    //removes all the senses to the list of registeredSenses
     static public void UnRegisterStimuli(PerceptionStimuli stimuli)
     {
         registeredStimulis.Remove(stimuli);
@@ -51,9 +57,10 @@ public abstract class SenseComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //it goes to each sense
         foreach(var stimuli in registeredStimulis)
         {
-            //is the stimuli being sensed, ask the children senses, if yes
+            //is the stimuli being sensed, ask the children classes senses, if yes
             if(IsStimuliSensable(stimuli))
             {
                 //if it has not been perceived
@@ -70,6 +77,7 @@ public abstract class SenseComponent : MonoBehaviour
                         //removes the routine from the dictionary
                         ForgettingRoutines.Remove(stimuli);
                     }
+                    //if the forgetting coroutine doesnt exist
                     else
                     {
                         //check if there is any suscribe method to the event onPerceptionUpdated and invokes them with true parameter

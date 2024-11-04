@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//A behaviour sense that has an angle of vision.
 public class SightSense : SenseComponent
 {
     [SerializeField]

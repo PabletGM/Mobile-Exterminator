@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//A behaviour sense that an AI can have, it is a radius of detection of the enemy.
 public class AlwaysAwareSense : SenseComponent
 {
     //distance that the enemy detects
