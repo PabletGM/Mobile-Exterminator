@@ -6,6 +6,7 @@ public class ChomperBehaviour : BehaviourTree
 {
     protected override void ConstructTree(out BTNode rootNode)
     {
-        throw new System.NotImplementedException();
+        //creates a node task of wait of 2 secs
+        rootNode = new BTTask_Wait(2f);
     }
 }
