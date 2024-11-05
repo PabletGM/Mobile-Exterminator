@@ -4470,60 +4470,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4705204255304246118, guid: 95378ab6107787c4a8c94dca562c2497,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 25.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705204255304246118, guid: 95378ab6107787c4a8c94dca562c2497,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705204255304246118, guid: 95378ab6107787c4a8c94dca562c2497,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.3799553
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705204255304246118, guid: 95378ab6107787c4a8c94dca562c2497,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9903465
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705204255304246118, guid: 95378ab6107787c4a8c94dca562c2497,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705204255304246118, guid: 95378ab6107787c4a8c94dca562c2497,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.13861449
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705204255304246118, guid: 95378ab6107787c4a8c94dca562c2497,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 15.935
-      objectReference: {fileID: 0}
     - target: {fileID: 4705204255304679236, guid: 95378ab6107787c4a8c94dca562c2497,
         type: 3}
       propertyPath: m_Name
       value: RockLedge01 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 4705204255304679236, guid: 95378ab6107787c4a8c94dca562c2497,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705204255304679238, guid: 95378ab6107787c4a8c94dca562c2497,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 4705204255304679234, guid: 95378ab6107787c4a8c94dca562c2497, type: 3}
-    - {fileID: 4705204255304679232, guid: 95378ab6107787c4a8c94dca562c2497, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95378ab6107787c4a8c94dca562c2497, type: 3}
