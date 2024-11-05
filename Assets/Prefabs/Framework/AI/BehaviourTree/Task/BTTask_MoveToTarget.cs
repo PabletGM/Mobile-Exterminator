@@ -62,7 +62,7 @@ public class BTTask_MoveToTarget : BTNode
     protected override NodeResult Update()
     {
 
-        //checking the target
+        //checking the target because it can change position and gameOject
         if(target == null)
         {
             //to stop the agent

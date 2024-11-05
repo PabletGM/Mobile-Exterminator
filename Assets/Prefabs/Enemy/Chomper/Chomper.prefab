@@ -52,6 +52,7 @@ GameObject:
   - component: {fileID: 3405074724311364758}
   - component: {fileID: 4498738363644319155}
   - component: {fileID: 5352649065806152810}
+  - component: {fileID: 599766260994881763}
   m_Layer: 0
   m_Name: Chomper
   m_TagString: Untagged
@@ -288,6 +289,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &599766260994881763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6403032068596921869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7465ffb5c7475446a93ad8b83949512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoints: []
 --- !u!1001 &6172859622925857977
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class PatrollingComponent : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //Array with Waypoints
+    [SerializeField] Transform[] patrolPoints;
+    //patrol point index
+    int currentPatrolPointIndex = -1;
 
-    // Update is called once per frame
-    void Update()
+    public bool GetNextPatrolPoint(out Vector3 point)
     {
-        
+        point = Vector3.zero;
+        //if it exist any patrol point
+        if(patrolPoints.Length == 0)
+        {
+            return false;
+        }
+        //we add 1 patrol point index
+        currentPatrolPointIndex = (currentPatrolPointIndex + 1) % patrolPoints.Length;
+        //we give the parameter point
+        point = patrolPoints[currentPatrolPointIndex].position;
+        return true; 
     }
 }

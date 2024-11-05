@@ -6,8 +6,7 @@ public class ChomperBehaviour : BehaviourTree
 {
     protected override void ConstructTree(out BTNode rootNode)
     {
-        BTTask_MoveToTarget moveToTarget = new BTTask_MoveToTarget(this, "Target");
-        rootNode = moveToTarget;
+       
             
 
 
