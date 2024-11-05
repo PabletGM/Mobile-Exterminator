@@ -6,9 +6,23 @@ public class ChomperBehaviour : BehaviourTree
 {
     protected override void ConstructTree(out BTNode rootNode)
     {
-       
-            
+        //create the sequencer
+        Sequencer PatrollingSequence = new Sequencer();
 
+        //create the task getNextpatrol and move there
+        BTT_GetNextPatrolPoint getNextPatrolPoint = new BTT_GetNextPatrolPoint(this, "PatrolPoint");
+        BTTask_MoveToLocation moveToLocation = new BTTask_MoveToLocation(this, "PatrolPoint");
+        //task to wait
+        BTTask_Wait waitAtPatrolPoint = new BTTask_Wait(2f);
+
+        //add the childs
+        PatrollingSequence.AddChild(getNextPatrolPoint);
+        PatrollingSequence.AddChild(moveToLocation);
+        PatrollingSequence.AddChild(waitAtPatrolPoint);
+
+
+        //rootNode
+        rootNode = PatrollingSequence;
 
     }
 

@@ -13,9 +13,8 @@ public class BTTask_MoveToLocation : BTNode
     BehaviourTree tree;
 
     //constructor
-    public BTTask_MoveToLocation(BehaviourTree tree, string patrolPointKey, Vector3 point, float acceptableDistance = 1)
+    public BTTask_MoveToLocation(BehaviourTree tree, string patrolPointKey, float acceptableDistance = 1)
     {
-        this.loc = point;
         this.patrolPointKey = patrolPointKey;
         this.acceptableDistance = acceptableDistance;
         this.tree = tree;
@@ -64,13 +63,5 @@ public class BTTask_MoveToLocation : BTNode
     bool IsLocationInAcceptableDistance()
     {
         return Vector3.Distance(loc, tree.transform.position) <= acceptableDistance;
-    }
-
-    private void BlackboardValueChanged(string key, object value)
-    {
-        if (key == patrolPointKey)
-        {
-            loc = (Vector3)value;
-        }
     }
 }
