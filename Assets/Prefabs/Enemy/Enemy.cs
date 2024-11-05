@@ -12,7 +12,8 @@ public class Enemy : MonoBehaviour
     //reference to the perception component
     [SerializeField] PerceptionComponent perceptionComponent;
 
-    GameObject Target;
+    [SerializeField] BehaviourTree behaviourTree;
+    
     void Start()
     {
         //if there is healthComp
@@ -28,16 +29,19 @@ public class Enemy : MonoBehaviour
         perceptionComponent.onPerceptionTargetChanged += TargetChanged;
     }
 
+    //add a parameter
     private void TargetChanged(GameObject target, bool sensed)
     {
        if(sensed)
        {
-            this.Target = target;
+            //add the info parameter Target
+            behaviourTree.Blackboard.SetOrAddData("Target",target);
        }
        else
        {
-            this.Target = null; 
-       }
+            //remove the info parameter Target
+            behaviourTree.Blackboard.RemoveBlackboardData("Target");
+        }
     }
 
     private void TakenDamage(float health, float amount, float maxHealth, GameObject Instigator)
@@ -79,13 +83,14 @@ public class Enemy : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if(Target != null)
+        //if it exists "Target" on the blackboard
+        if(behaviourTree && behaviourTree.Blackboard.GetBlackboardData("Target", out GameObject target))
         {
             // Set the gizmo color to red
             Gizmos.color = Color.red;
 
             //draw a sphere in the target
-            Vector3 drawTargetPos = Target.transform.position + Vector3.up;
+            Vector3 drawTargetPos = target.transform.position + Vector3.up;
             Gizmos.DrawWireSphere(drawTargetPos, 0.7f);
             //draw a Line from the enemy to the player
             Gizmos.DrawLine(transform.position + Vector3.up, drawTargetPos);

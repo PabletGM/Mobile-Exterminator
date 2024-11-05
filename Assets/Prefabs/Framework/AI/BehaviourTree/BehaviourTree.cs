@@ -6,6 +6,14 @@ using UnityEngine;
 public abstract class BehaviourTree : MonoBehaviour
 {
     BTNode Root;
+    Blackboard blackboard = new Blackboard();
+
+    //property
+    public Blackboard Blackboard 
+    { 
+        get { return blackboard; } 
+    }
+
 
     private void Start()
     {
