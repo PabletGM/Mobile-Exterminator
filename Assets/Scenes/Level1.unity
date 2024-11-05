@@ -124,7 +124,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: bf336fc6eb156f24b8eb665fbfa7f80f, type: 2}
 --- !u!114 &34697645 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5763983625328359715, guid: b602eb05a0840ca4c9e4caf4a355365e,
@@ -1389,7 +1389,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &540015655
 Transform:
@@ -1691,7 +1691,7 @@ PrefabInstance:
     - target: {fileID: 1524926115185062115, guid: 19149ee3cddb30b48898bbcdbf0a607a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0049853325
+      value: -0.017
       objectReference: {fileID: 0}
     - target: {fileID: 1524926115185062115, guid: 19149ee3cddb30b48898bbcdbf0a607a,
         type: 3}
