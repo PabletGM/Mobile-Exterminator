@@ -219,7 +219,14 @@ public class Player : MonoBehaviour
         //calculate the animation
         ChangeDirectionForwardRightVectorBlendTreeAnimation(moveDirection);
 
+        //apply gravity
+        PlayerGravity();
 
+    }
+
+    private void PlayerGravity()
+    {
+        characterController.Move(Vector3.down * Time.deltaTime * 10f);
     }
 
     //DOT PRODUCT = producto escalar = cos(angle between vectors) * |a| * |b|
