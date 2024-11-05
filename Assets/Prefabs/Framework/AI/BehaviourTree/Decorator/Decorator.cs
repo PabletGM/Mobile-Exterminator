@@ -6,6 +6,12 @@ public abstract class Decorator : BTNode
 {
     BTNode child;
 
+    //getter
+    protected BTNode GetChild()
+    {
+        return child;
+    }
+
     public Decorator(BTNode child)
     {
         this.child = child;
