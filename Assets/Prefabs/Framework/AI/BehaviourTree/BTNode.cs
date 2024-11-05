@@ -63,5 +63,10 @@ public abstract class BTNode
         //clean up on Child Class
     }
 
+    public void Abort()
+    {
+        EndNode();
+    }
+
     bool started = false;
 }
