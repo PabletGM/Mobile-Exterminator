@@ -8,22 +8,40 @@ public class ChomperBehaviour : BehaviourTree
     {
         //create a selector
         Selector rootSelector = new Selector();
-        //create an attack sequencer
-        Sequencer attackTargetSeq = new Sequencer();
-        //create task moveToTarget
-        BTTask_MoveToTarget moveToTarget = new BTTask_MoveToTarget(this,"Target");
-        //add it to the sequencer
-        attackTargetSeq.AddChild(moveToTarget);
-       
+
+
+        #region Attack
+
+            //create an attack sequencer
+            Sequencer attackTargetSeq = new Sequencer();
+
+            #region AddTaskMoveToTargetToAttackSequence
+
+            //create task moveToTarget
+            BTTask_MoveToTarget moveToTarget = new BTTask_MoveToTarget(this, "Target");
+            //add it to the sequencer
+            attackTargetSeq.AddChild(moveToTarget);
+
+            #endregion
+
+            #region Adding DecoratorToSelector
+
+        //THE DECORATOR INCLUDES the child attackTargetSequencer and his task moveToTarget
+
         //create decorator
         BlackboardDecorator attackTargetDecorator = new BlackboardDecorator(this,
-            attackTargetSeq,"Target",
+            attackTargetSeq, "Target",
             BlackboardDecorator.RunCondition.KeyExists,
             BlackboardDecorator.NotifyRule.RunConditionChange,
             BlackboardDecorator.NotifyAbort.both);
 
         //add decorator to the selector
         rootSelector.AddChild(attackTargetDecorator);
+
+        #endregion
+
+        #endregion
+
 
         #region Patrolling
         //create the sequencer
@@ -44,10 +62,8 @@ public class ChomperBehaviour : BehaviourTree
         rootSelector.AddChild(PatrollingSequence);
         #endregion
 
-
         //rootNode
         rootNode = rootSelector;
-
     }
 
     //create the tasks
