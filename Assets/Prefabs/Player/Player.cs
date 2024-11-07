@@ -16,6 +16,9 @@ public class Player : MonoBehaviour
     [SerializeField] float TurnSpeed;
     [SerializeField] float AnimTurnSpeedSmooth;
 
+    //components
+    [SerializeField] MovementComponent movementComponent;
+
     [Header("Inventory")]
     [SerializeField] InventoryComponent inventoryComponent;
 
@@ -130,22 +133,9 @@ public class Player : MonoBehaviour
 
     void AimRotation(Vector3 aimDirection)
     {
-        float currentTurnSpeed = 0;
+        float currentTurnSpeed = movementComponent.AimRotation(aimDirection);
         //if there is aimDirection we calculate the rotation of the player
-        if (aimDirection.magnitude != 0)
-        {
-            Quaternion previousRotation = transform.rotation;
-
-            //0.5f(if it is 1 it is b, if it is 0 it is a)
-            float turnLerpAlpha = TurnSpeed * Time.deltaTime;
-            //tells the player to look where the aimDirection, a rotation smooth so lerp between a and b in 
-            Quaternion targetRotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(aimDirection, Vector3.up), turnLerpAlpha);
-            transform.rotation = targetRotation;
-
-            Quaternion currentRotation = transform.rotation;
-            //calculate turn speed
-            currentTurnSpeed = CalculateCurrentTurnSpeed(previousRotation, currentRotation, currentTurnSpeed, aimDirection);
-        }
+        
         //lerping the turnSpeed
         animatorTurnSpeed = Mathf.Lerp(animatorTurnSpeed,currentTurnSpeed, Time.deltaTime * AnimTurnSpeedSmooth);
 

@@ -18,6 +18,10 @@ public class ChomperBehaviour : BehaviourTree
 
             //create task moveToTarget
             BTTask_MoveToTarget moveToTarget = new BTTask_MoveToTarget(this, "Target");
+            //rotate towards the target
+
+            //attack
+
             //add it to the sequencer
             attackTargetSeq.AddChild(moveToTarget);
 

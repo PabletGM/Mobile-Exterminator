@@ -55,13 +55,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631806169681487254}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.42991978, y: 0.42062515, z: -0.5074291, w: 0.61705697}
-  m_LocalPosition: {x: 0.013, y: 0.039, z: -0.007}
+  m_LocalRotation: {x: -0.56510586, y: 0.412179, z: -0.42168587, w: 0.57701373}
+  m_LocalPosition: {x: 0.022924818, y: 0.019066535, z: -0.00727032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7019632420990577257}
-  m_LocalEulerAnglesHint: {x: -5.952, y: 73.86, z: -83.339}
+  m_LocalEulerAnglesHint: {x: -17.73, y: 88.705, z: -89.659}
 --- !u!1 &5487766726186100400
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 4566592398935791021}
   - component: {fileID: 2773937792537822179}
   - component: {fileID: 894401128953657226}
+  - component: {fileID: 2457007993078479449}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -114,9 +115,10 @@ MonoBehaviour:
   moveStick: {fileID: 0}
   aimStick: {fileID: 0}
   characterController: {fileID: 7232314140847835461}
-  moveSpeed: 0
-  TurnSpeed: 20
-  AnimTurnSpeedSmooth: 0
+  moveSpeed: 4
+  TurnSpeed: 16
+  AnimTurnSpeedSmooth: 12
+  movementComponent: {fileID: 0}
   inventoryComponent: {fileID: 2773937792537822179}
 --- !u!143 &7232314140847835461
 CharacterController:
@@ -137,11 +139,11 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2.08
+  m_Height: 2
   m_Radius: 0.23
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_StepOffset: 0
+  m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!95 &4566592398935791021
@@ -196,6 +198,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f5f8f5b83497f43a4507342dad168f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2457007993078479449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487766726186100400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178a11d07ac9e3143ac6ee30a2f98fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnSpeed: 16
 --- !u!1001 &7019632420990449285
 PrefabInstance:
   m_ObjectHideFlags: 0
