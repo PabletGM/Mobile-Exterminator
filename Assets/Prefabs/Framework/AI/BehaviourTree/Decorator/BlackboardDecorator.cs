@@ -146,17 +146,20 @@ public class BlackboardDecorator : Decorator
         }
     }
 
+    //ends this node and the lower nodes
     private void AbortBoth()
     {
         Abort();
         AbortLower();
     }
 
+    //ends only lower nodes
     private void AbortLower()
     {
         tree.AbortLowerThan(GetPriority());
     }
 
+    //only aborts the self node
     private void AbortSelf()
     {
         Abort();

@@ -34,8 +34,8 @@ public class ChomperBehaviour : BehaviourTree
                 BlackboardDecorator.NotifyRule.RunConditionChange,
                 BlackboardDecorator.NotifyAbort.both);
 
-        //add decorator to the selector
-        rootSelector.AddChild(attackTargetDecorator);
+            //add decorator to the selector
+            rootSelector.AddChild(attackTargetDecorator);
 
         #endregion
 
@@ -43,7 +43,7 @@ public class ChomperBehaviour : BehaviourTree
 
         #region CheckLastSeenLocationSequencer
 
-            Sequencer CheckLastSeenLocation = new Sequencer();
+        Sequencer CheckLastSeenLocation = new Sequencer();
 
             #region Tasks
                 //move to the last location
