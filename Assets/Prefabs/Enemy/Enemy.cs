@@ -13,6 +13,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] PerceptionComponent perceptionComponent;
 
     [SerializeField] BehaviourTree behaviourTree;
+
+    //component
+    [SerializeField] MovementComponent movementComponent;
     
     void Start()
     {
