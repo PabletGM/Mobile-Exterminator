@@ -62,4 +62,9 @@ public abstract class BehaviourTree : MonoBehaviour
             Root.Abort();
         }
     }
+
+    internal IBehaviourTreeInterface GetBehaviourTreeInterface()
+    {
+        return BehaviourTreeInterface;
+    }
 }
