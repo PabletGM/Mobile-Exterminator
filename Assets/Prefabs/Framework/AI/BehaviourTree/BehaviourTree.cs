@@ -7,6 +7,7 @@ public abstract class BehaviourTree : MonoBehaviour
 {
     BTNode Root;
     Blackboard blackboard = new Blackboard();
+    IBehaviourTreeInterface BehaviourTreeInterface;
     //BTNode previousNode;
 
     //property
@@ -18,6 +19,8 @@ public abstract class BehaviourTree : MonoBehaviour
 
     private void Start()
     {
+        //looks for a component that has the interface like enemy for example to have a reference
+        BehaviourTreeInterface = GetComponent<IBehaviourTreeInterface>();
         //construct tree
         ConstructTree(out Root);
         //put the sort priority of everything

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IBehaviourTreeInterface
 {
     //reference of the HealthComponent
     [SerializeField] HealthComponent healthComponent;
@@ -100,5 +100,17 @@ public class Enemy : MonoBehaviour
             //draw a Line from the enemy to the player
             Gizmos.DrawLine(transform.position + Vector3.up, drawTargetPos);
         }
+    }
+
+    //rotate to look a target
+    public void RotateTowards(GameObject target, bool verticalAim)
+    {
+        //calculate the aimDirection excluding vertical differences
+        Vector3 aimDir = target.transform.position - transform.position;
+        //the value of aimDir.y depends on if verticalAim is false or true and it will be if true 0
+        aimDir.y = verticalAim ? aimDir.y : 0;
+        aimDir = aimDir.normalized;
+        //ask our movement component to rotate
+        movementComponent.AimRotation(aimDir);
     }
 }
