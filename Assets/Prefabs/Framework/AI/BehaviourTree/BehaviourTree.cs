@@ -7,6 +7,7 @@ public abstract class BehaviourTree : MonoBehaviour
 {
     BTNode Root;
     Blackboard blackboard = new Blackboard();
+    //BTNode previousNode;
 
     //property
     public Blackboard Blackboard 
@@ -35,7 +36,27 @@ public abstract class BehaviourTree : MonoBehaviour
 
     void Update()
     {
-        //calls the UpdateNode
+        //calls the UpdateNode of the root
         Root.UpdateNode();
+        //currentNode
+        //BTNode currentNode = Root.Get();
+        //if(previousNode != currentNode) 
+        //{
+        //    //change previousNode
+        //    previousNode = currentNode;
+        //    //say the currentNode
+        //    Debug.Log($"current node changed to: {currentNode}");
+        //}
+    }
+
+    public void AbortLowerThan(int priority)
+    {
+        BTNode currentNode = Root.Get();
+        //if current node is lower in the BT than priority argument
+        if (currentNode.GetPriority() > priority) 
+        {
+            //it aborts what is currently running
+            Root.Abort();
+        }
     }
 }

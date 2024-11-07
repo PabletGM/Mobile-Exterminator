@@ -64,4 +64,10 @@ public class BTTask_MoveToLocation : BTNode
     {
         return Vector3.Distance(loc, tree.transform.position) <= acceptableDistance;
     }
+
+    protected override void End()
+    {
+        agent.isStopped = true;
+        base.End();
+    }
 }

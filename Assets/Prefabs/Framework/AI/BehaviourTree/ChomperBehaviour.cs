@@ -28,7 +28,7 @@ public class ChomperBehaviour : BehaviourTree
 
         //THE DECORATOR INCLUDES the child attackTargetSequencer and his task moveToTarget
 
-        //create decorator
+        //create decorator with some conditions, if Target exists
         BlackboardDecorator attackTargetDecorator = new BlackboardDecorator(this,
             attackTargetSeq, "Target",
             BlackboardDecorator.RunCondition.KeyExists,

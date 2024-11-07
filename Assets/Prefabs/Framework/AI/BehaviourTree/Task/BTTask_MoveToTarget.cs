@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -84,5 +85,13 @@ public class BTTask_MoveToTarget : BTNode
     bool IsTargetInAcceptableDistance()
     {
         return Vector3.Distance(target.transform.position, agent.transform.position) <= acceptableDistance;
+    }
+
+    protected override void End()
+    {
+        agent.isStopped = true;
+        //when the blackboard value changes, the method Blackboard Value Changed will be called
+        tree.Blackboard.onBlackboardValueChange += BlackboardValueChanged;
+        base.End();
     }
 }

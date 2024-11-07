@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 //collection of children nodes
@@ -59,5 +60,27 @@ public abstract class Compositor : BTNode
         {
             child.SortPriority(ref priorityConter);
         }
+    }
+
+    //get override on the compositor function
+    public override BTNode Get()
+    {
+        //Does it have any current child? current task?
+        if (currentChild == null)
+        {
+            // Does it have any task ?
+            if (children.Count != 0)
+            {
+                //return value of te first child
+                return children.First.Value.Get();
+            }
+            //returning this node
+            else
+            {
+                return this;
+            }
+        }
+        return currentChild.Value.Get();
+
     }
 }

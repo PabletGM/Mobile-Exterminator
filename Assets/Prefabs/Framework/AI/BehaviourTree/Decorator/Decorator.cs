@@ -21,4 +21,10 @@ public abstract class Decorator : BTNode
         base.SortPriority(ref priorityConter);
         child.SortPriority(ref priorityConter);
     }
+
+    //it gives the Get of the child(any compositor linked)
+    public override BTNode Get()
+    {
+        return child.Get();
+    }
 }

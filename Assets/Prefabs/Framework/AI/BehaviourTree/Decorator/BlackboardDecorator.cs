@@ -154,7 +154,7 @@ public class BlackboardDecorator : Decorator
 
     private void AbortLower()
     {
-
+        tree.AbortLowerThan(GetPriority());
     }
 
     private void AbortSelf()
