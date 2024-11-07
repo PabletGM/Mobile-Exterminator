@@ -39,6 +39,8 @@ public class Enemy : MonoBehaviour
        }
        else
        {
+            //adding an argument of LastSeenLocation
+            behaviourTree.Blackboard.SetOrAddData("LastSeenLocation", target.transform.position);
             //remove the info parameter Target
             behaviourTree.Blackboard.RemoveBlackboardData("Target");
         }

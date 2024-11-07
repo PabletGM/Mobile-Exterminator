@@ -9,7 +9,6 @@ public class ChomperBehaviour : BehaviourTree
         //create a selector
         Selector rootSelector = new Selector();
 
-
         #region Attack
 
             //create an attack sequencer
@@ -26,14 +25,14 @@ public class ChomperBehaviour : BehaviourTree
 
             #region Adding DecoratorToSelector
 
-        //THE DECORATOR INCLUDES the child attackTargetSequencer and his task moveToTarget
+            //THE DECORATOR INCLUDES the child attackTargetSequencer and his task moveToTarget
 
-        //create decorator with some conditions, if Target exists
-        BlackboardDecorator attackTargetDecorator = new BlackboardDecorator(this,
-            attackTargetSeq, "Target",
-            BlackboardDecorator.RunCondition.KeyExists,
-            BlackboardDecorator.NotifyRule.RunConditionChange,
-            BlackboardDecorator.NotifyAbort.both);
+            //create decorator with some conditions, if Target exists
+            BlackboardDecorator attackTargetDecorator = new BlackboardDecorator(this,
+                attackTargetSeq, "Target",
+                BlackboardDecorator.RunCondition.KeyExists,
+                BlackboardDecorator.NotifyRule.RunConditionChange,
+                BlackboardDecorator.NotifyAbort.both);
 
         //add decorator to the selector
         rootSelector.AddChild(attackTargetDecorator);
@@ -42,6 +41,42 @@ public class ChomperBehaviour : BehaviourTree
 
         #endregion
 
+        #region CheckLastSeenLocationSequencer
+
+            Sequencer CheckLastSeenLocation = new Sequencer();
+
+            #region Tasks
+                //move to the last location
+                BTTask_MoveToLocation moveToLastSeenLocation = new BTTask_MoveToLocation(this,"LastSeenLocation",2);
+                //wait for 2 seconds
+                BTTask_Wait WaitAtLastSeenLocation = new BTTask_Wait(2f);
+                //after checking, clear that data
+                BTTask_RemoveBlackboardData removeBlackboardData = new BTTask_RemoveBlackboardData(this, "LastSeenLocation");
+        #endregion
+
+            #region AddingChilds
+            //add the childs
+            CheckLastSeenLocation.AddChild(moveToLastSeenLocation);
+            CheckLastSeenLocation.AddChild(WaitAtLastSeenLocation);
+            CheckLastSeenLocation.AddChild(removeBlackboardData);
+        #endregion
+
+            #region Decorator
+                //check with a blackboard decorator when there is no last seen location to do it or not
+                //we send this BT, the sequencer to execute, the key, the condition of if exists, if runConditionChange and abort
+                BlackboardDecorator checkLastSeenLocationDecorator = new BlackboardDecorator(this,
+                    CheckLastSeenLocation,
+                    "LastSeenLocation",
+                    BlackboardDecorator.RunCondition.KeyExists,
+                    BlackboardDecorator.NotifyRule.RunConditionChange,
+                    BlackboardDecorator.NotifyAbort.none
+                    );
+            #endregion
+
+            //ADD THE DECORATOR TO THE ROOTSELECTOR
+            rootSelector.AddChild(checkLastSeenLocationDecorator);
+
+        #endregion
 
         #region Patrolling
         //create the sequencer
@@ -65,37 +100,6 @@ public class ChomperBehaviour : BehaviourTree
         //rootNode
         rootNode = rootSelector;
     }
-
-    //create the tasks
-    //            //wait
-    //        BTTask_Wait waitTask = new BTTask_Wait(2f);
-    //            //log
-    //        BTTask_Log log = new BTTask_Log("Logging");
-    //        //fail
-    //        BTTask_AlwaysFail fail = new BTTask_AlwaysFail();
-
-    // //=====================================================================================       
-    //        //create the sequencer, it will make the 2 of them
-    //        Sequencer RootSeq = new Sequencer();
-    //        //add childs
-    //        RootSeq.AddChild(fail);
-    //        RootSeq.AddChild(log);
-    //        RootSeq.AddChild(waitTask);
-    ////======================================================================================
-
-    //        //create the selector, it will make the 2 of them
-    //        Selector RootSel = new Selector();
-    //        //add childs
-    //        RootSel.AddChild(fail);
-    //        RootSel.AddChild(log);
-    //        RootSel.AddChild(waitTask);
-
-    //        //======================================================================================
-    //        ////say the rootNode that it is a Sequencer
-    //        rootNode = RootSeq;
-
-    //say the rootNode that it is a Selector
-    //rootNode = RootSel;
 
 
 }
