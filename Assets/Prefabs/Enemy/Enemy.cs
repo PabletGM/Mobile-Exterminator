@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface
+public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInterface
 {
     //reference of the HealthComponent
     [SerializeField] HealthComponent healthComponent;
@@ -17,7 +17,15 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface
     //component
     [SerializeField] MovementComponent movementComponent;
 
+    //default value of enemy team
+    [SerializeField] int TeamID = 2;
+
      Vector3 previousPosition;
+
+    public int GetTeamID()
+    {
+        return TeamID;
+    }
 
 
     //get set animator

@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 using UnityEngine.Windows;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, ITeamInterface
 {
     [SerializeField] Joystick moveStick;
     [SerializeField] Joystick aimStick;
@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
     [Header("Inventory")]
     [SerializeField] InventoryComponent inventoryComponent;
 
+    [SerializeField] int TeamID = 1;
+
     Vector2 moveInput;
     Vector2 aimInput;
 
@@ -34,6 +36,10 @@ public class Player : MonoBehaviour
     float animatorTurnSpeed;
 
 
+    public int GetTeamID()
+    {
+        return TeamID;
+    }
   
 
     // Start is called before the first frame update
