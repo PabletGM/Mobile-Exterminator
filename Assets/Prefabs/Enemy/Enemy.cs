@@ -17,7 +17,7 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface
     //component
     [SerializeField] MovementComponent movementComponent;
 
-    Vector3 previousPosition;
+     Vector3 previousPosition;
 
 
     //get set animator
@@ -106,6 +106,9 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface
         float speed = posDelta.magnitude / Time.deltaTime;
 
         Animator.SetFloat("Speed", speed);
+        Debug.Log(speed);
+        //we restart the previousPosition
+        previousPosition = transform.position;
     }
 
     private void OnDrawGizmos()
