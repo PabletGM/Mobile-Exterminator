@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, IBehaviourTreeInterface
+public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface
 {
     //reference of the HealthComponent
     [SerializeField] HealthComponent healthComponent;
@@ -16,6 +16,14 @@ public class Enemy : MonoBehaviour, IBehaviourTreeInterface
 
     //component
     [SerializeField] MovementComponent movementComponent;
+
+
+    //get set animator
+    public Animator Animator
+    {
+        get { return animator; }
+        private set { animator = value; }
+    }
     
     void Start()
     {
@@ -101,8 +109,8 @@ public class Enemy : MonoBehaviour, IBehaviourTreeInterface
             Gizmos.DrawLine(transform.position + Vector3.up, drawTargetPos);
         }
     }
-
-    //rotate to look a target
+//==========================================================================================================================
+    //rotate to look a target 
     public void RotateTowards(GameObject target, bool verticalAim)
     {
         //calculate the aimDirection excluding vertical differences
@@ -112,5 +120,10 @@ public class Enemy : MonoBehaviour, IBehaviourTreeInterface
         aimDir = aimDir.normalized;
         //ask our movement component to rotate
         movementComponent.AimRotation(aimDir);
+    }
+
+    public virtual void AttackTarget(GameObject target)
+    {
+        //override in child
     }
 }

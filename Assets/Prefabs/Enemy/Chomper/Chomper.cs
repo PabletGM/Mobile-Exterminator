@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chomper : MonoBehaviour
+public class Chomper : Enemy
 {
-    // Start is called before the first frame update
-    void Start()
+    //override of the interface  IBehaviourTree method
+    public override void AttackTarget(GameObject target)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Animator.SetTrigger("Attack");
     }
 }

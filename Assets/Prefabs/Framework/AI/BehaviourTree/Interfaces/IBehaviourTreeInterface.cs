@@ -6,4 +6,5 @@ public interface IBehaviourTreeInterface
 {
     //rotate to look a target
     public void RotateTowards(GameObject target, bool verticalAim = false);
+    public void AttackTarget(GameObject target);
 }
