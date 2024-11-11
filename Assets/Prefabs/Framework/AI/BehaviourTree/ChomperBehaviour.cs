@@ -21,12 +21,13 @@ public class ChomperBehaviour : BehaviourTree
             //rotate towards the target
             BTTask_RotateTowardsTarget rotateTowardsTarget = new BTTask_RotateTowardsTarget(this, "Target", 10f);
             //attack
-
+            BTTask_AttackTarget attackTarget = new BTTask_AttackTarget(this, "Target");
 
 
             //add it to the sequencer
             attackTargetSeq.AddChild(moveToTarget);
             attackTargetSeq.AddChild(rotateTowardsTarget);
+            attackTargetSeq.AddChild(attackTarget);
 
             #endregion
 

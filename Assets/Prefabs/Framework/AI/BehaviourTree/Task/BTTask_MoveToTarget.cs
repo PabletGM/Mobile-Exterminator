@@ -10,11 +10,11 @@ public class BTTask_MoveToTarget : BTNode
    NavMeshAgent agent;
    string targetKey;
    GameObject target;
-   float acceptableDistance = 1;
+   float acceptableDistance = 2;
    BehaviourTree tree;
 
     //constructor
-    public BTTask_MoveToTarget(BehaviourTree tree, string targetKey, float acceptableDistance = 1)
+    public BTTask_MoveToTarget(BehaviourTree tree, string targetKey, float acceptableDistance = 2)
     {
         this.targetKey = targetKey;
         this.acceptableDistance = acceptableDistance;
