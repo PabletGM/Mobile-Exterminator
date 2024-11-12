@@ -114,7 +114,7 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInter
         float speed = posDelta.magnitude / Time.deltaTime;
 
         Animator.SetFloat("Speed", speed);
-        Debug.Log(speed);
+
         //we restart the previousPosition
         previousPosition = transform.position;
     }
