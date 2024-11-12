@@ -35,7 +35,7 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInter
         private set { animator = value; }
     }
     
-    void Start()
+    protected virtual void Start()
     {
         //if there is healthComp
         if(healthComponent != null)

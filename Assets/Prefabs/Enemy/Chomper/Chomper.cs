@@ -29,4 +29,12 @@ public class Chomper : Enemy
             triggerDamageComp.SetDamageEnabled(false);
         }
     }
+
+    protected override void Start()
+    {
+        base.Start();
+        //to initialize the team interface of the DamageComponent
+        //triggerDamageComponent and DamageComponent are parent and son so we can call the methods of DamageComp
+        triggerDamageComp.SetTeamInterfaceSource(this);
+    }
 }

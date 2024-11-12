@@ -9,11 +9,17 @@ public abstract class DamageComponent : MonoBehaviour
     [SerializeField] protected bool DamageEnemy;
     [SerializeField] protected bool DamageNeutral;
 
-    [SerializeField] GameObject teamInterfaceSource;
+    ITeamInterface teamInterface;
 
+   
+    public void SetTeamInterfaceSource(ITeamInterface teamInterface)
+    {
+        this.teamInterface = teamInterface;
+    }
+    
+    
     public bool ShouldDamage(GameObject other)
     {
-        ITeamInterface teamInterface = teamInterfaceSource.GetComponent<ITeamInterface>();
 
         if(teamInterface == null)
         {
