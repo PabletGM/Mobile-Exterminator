@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 2773937792537822179}
   - component: {fileID: 894401128953657226}
   - component: {fileID: 2457007993078479449}
+  - component: {fileID: 3105539174338318229}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -118,8 +119,11 @@ MonoBehaviour:
   moveSpeed: 4
   TurnSpeed: 16
   AnimTurnSpeedSmooth: 12
-  movementComponent: {fileID: 0}
+  movementComponent: {fileID: 2457007993078479449}
   inventoryComponent: {fileID: 2773937792537822179}
+  TeamID: 1
+  healthComponent: {fileID: 3105539174338318229}
+  healthBar: {fileID: 0}
 --- !u!143 &7232314140847835461
 CharacterController:
   m_ObjectHideFlags: 0
@@ -211,6 +215,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 16
+--- !u!114 &3105539174338318229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487766726186100400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb023be86e8e2e4fa1e14ff47cb3b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxhealth: 100
 --- !u!1001 &7019632420990449285
 PrefabInstance:
   m_ObjectHideFlags: 0

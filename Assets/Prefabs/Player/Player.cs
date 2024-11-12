@@ -24,6 +24,10 @@ public class Player : MonoBehaviour, ITeamInterface
 
     [SerializeField] int TeamID = 1;
 
+    [Header("HealthAndDamage")]
+    [SerializeField] HealthComponent healthComponent;
+    [SerializeField] PlayerHealthBar healthBar;
+
     Vector2 moveInput;
     Vector2 aimInput;
 
@@ -57,6 +61,17 @@ public class Player : MonoBehaviour, ITeamInterface
         cameraController = FindObjectOfType<CameraController>();
         //animator reference
         animator = GetComponent<Animator>();
+
+        //health player linked methods to events
+
+        healthComponent.onHealthChange += HealthChanged;
+        healthComponent.BroadcastHealthValueInmediately();
+        
+    }
+
+    private void HealthChanged(float health, float amount, float maxHealth)
+    {
+        healthBar.UpdateHealth(health, amount, maxHealth);
     }
 
     public void AttackPoint()

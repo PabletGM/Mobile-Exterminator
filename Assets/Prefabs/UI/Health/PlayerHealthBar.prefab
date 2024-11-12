@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5426503165440175431}
   - component: {fileID: 7892470340564702504}
   - component: {fileID: 2841598118790395008}
+  - component: {fileID: 140422720439932880}
   m_Layer: 5
   m_Name: PlayerHealthBar
   m_TagString: Untagged
@@ -78,6 +79,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &140422720439932880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267205863749994163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0bad2cbcc507f7448051f186c848d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountImage: {fileID: 3932734783727198488}
+  amountText: {fileID: 4493439812858609891}
 --- !u!1 &4618574236017839151
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +180,7 @@ GameObject:
   - component: {fileID: 2443039320542790991}
   - component: {fileID: 3932734783727198488}
   m_Layer: 5
-  m_Name: lifeLeftImage
+  m_Name: amountImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,7 +255,7 @@ GameObject:
   - component: {fileID: 4131254022431554135}
   - component: {fileID: 4493439812858609891}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: amountText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
