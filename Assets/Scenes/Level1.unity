@@ -1087,8 +1087,36 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5487766726186100400, guid: 9d24ac047da41154c9d8320a341bf9e3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2057624530}
   m_SourcePrefab: {fileID: 100100000, guid: 9d24ac047da41154c9d8320a341bf9e3, type: 3}
+--- !u!1 &414316999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5487766726186100400, guid: 9d24ac047da41154c9d8320a341bf9e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 414316998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &414317000 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7019632420976753959, guid: 9d24ac047da41154c9d8320a341bf9e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 414316998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &414317001 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3105539174338318229, guid: 9d24ac047da41154c9d8320a341bf9e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 414316998}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414316999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb023be86e8e2e4fa1e14ff47cb3b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &516150923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7150,6 +7178,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 414316998}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2057624530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414316999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967f7367de125cd4581acb9905a7a411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mesh: {fileID: 414317000}
+  DamageEmissionColor: {r: 0.70440245, g: 0, b: 0, a: 0}
+  blinkSpeed: 10
+  EmissionColorPropertyName: _Addition
+  healthComponent: {fileID: 414317001}
 --- !u!1001 &2098563871
 PrefabInstance:
   m_ObjectHideFlags: 0
