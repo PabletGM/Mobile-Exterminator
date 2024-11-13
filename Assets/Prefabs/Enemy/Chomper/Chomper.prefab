@@ -23,6 +23,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TriggerDamager
       objectReference: {fileID: 0}
+    - target: {fileID: 4179009558325197877, guid: ccdbfdb9ed259ce48ad059e8da73d5d5,
+        type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179009558325197877, guid: ccdbfdb9ed259ce48ad059e8da73d5d5,
+        type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4698326172342496465, guid: ccdbfdb9ed259ce48ad059e8da73d5d5,
         type: 3}
       propertyPath: m_LocalScale.z
@@ -36,12 +46,12 @@ PrefabInstance:
     - target: {fileID: 4698326172342496465, guid: ccdbfdb9ed259ce48ad059e8da73d5d5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.918
       objectReference: {fileID: 0}
     - target: {fileID: 4698326172342496465, guid: ccdbfdb9ed259ce48ad059e8da73d5d5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.17
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: 4698326172342496465, guid: ccdbfdb9ed259ce48ad059e8da73d5d5,
         type: 3}
@@ -222,6 +232,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5093598530600635550, guid: 19149ee3cddb30b48898bbcdbf0a607a,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093598530600635550, guid: 19149ee3cddb30b48898bbcdbf0a607a,
+        type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5352649065806152810, guid: 19149ee3cddb30b48898bbcdbf0a607a,
         type: 3}
       propertyPath: m_Speed
@@ -231,6 +251,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AngularSpeed
       value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5352649065806152810, guid: 19149ee3cddb30b48898bbcdbf0a607a,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6403032068596921869, guid: 19149ee3cddb30b48898bbcdbf0a607a,
         type: 3}

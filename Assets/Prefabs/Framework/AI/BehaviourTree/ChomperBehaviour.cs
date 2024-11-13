@@ -55,7 +55,7 @@ public class ChomperBehaviour : BehaviourTree
 
             #region Tasks
                 //move to the last location
-                BTTask_MoveToLocation moveToLastSeenLocation = new BTTask_MoveToLocation(this,"LastSeenLocation",2);
+                BTTask_MoveToLocation moveToLastSeenLocation = new BTTask_MoveToLocation(this,"LastSeenLocation",1);
                 //wait for 2 seconds
                 BTTask_Wait WaitAtLastSeenLocation = new BTTask_Wait(2f);
                 //after checking, clear that data
