@@ -158,7 +158,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.ExterminatorMobileGame
+    Android: com.DefaultCompany.AlienExterminator
   buildNumber:
     Standalone: 0
     VisionOS: 0
