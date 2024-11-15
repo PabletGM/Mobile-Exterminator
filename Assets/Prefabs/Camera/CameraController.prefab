@@ -111,8 +111,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
-  far clip plane: 10000
+  near clip plane: 1
+  far clip plane: 18
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -120,12 +120,12 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
+  m_HDR: 0
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -149,6 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7827417551231887713}
   - component: {fileID: 8775616147433982722}
+  - component: {fileID: 4990263444422901120}
   m_Layer: 0
   m_Name: CameraController
   m_TagString: Untagged
@@ -185,3 +186,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followTrans: {fileID: 0}
+  TurnSpeed: 8
+--- !u!114 &4990263444422901120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5070252079214966391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e76cb010fcc54469c57d43be9b44c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeMagnitude: 0.1
+  shakeDuration: 0.1
+  shakeTransform: {fileID: 2844801578354881202}
+  shakeRecoverySpeed: 10

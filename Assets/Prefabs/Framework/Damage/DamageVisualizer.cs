@@ -35,7 +35,7 @@ public class DamageVisualizer : MonoBehaviour
         healthComponent.onTakeDamage += TookDamage;
     }
 
-    private void TookDamage(float health, float amount, float maxHealth, GameObject Instigator)
+    protected virtual void TookDamage(float health, float amount, float maxHealth, GameObject Instigator)
     {
         //Check current color: It checks the current emission color of the material.
         Color currentEmissionColor = mesh.material.GetColor(EmissionColorPropertyName);

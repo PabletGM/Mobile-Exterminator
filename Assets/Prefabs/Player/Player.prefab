@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 894401128953657226}
   - component: {fileID: 2457007993078479449}
   - component: {fileID: 3105539174338318229}
+  - component: {fileID: 6369625090523242861}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -134,7 +135,7 @@ CharacterController:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -144,7 +145,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2
-  m_Radius: 0.23
+  m_Radius: 0.3
   m_SlopeLimit: 45
   m_StepOffset: 0
   m_SkinWidth: 0.0001
@@ -227,8 +228,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb023be86e8e2e4fa1e14ff47cb3b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxhealth: 100
+  health: 200
+  maxhealth: 200
+--- !u!114 &6369625090523242861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487766726186100400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0f9c0eb810beb4bb80d2e99ad04970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mesh: {fileID: 7019632420976753959}
+  DamageEmissionColor: {r: 1, g: 0, b: 0, a: 0}
+  blinkSpeed: 20
+  EmissionColorPropertyName: _Addition
+  healthComponent: {fileID: 3105539174338318229}
+  shaker: {fileID: 0}
 --- !u!1001 &7019632420990449285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -311,6 +330,12 @@ PrefabInstance:
       addedObject: {fileID: 3538358162044823940}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5674d01884853d4e8f2386a171e14d9, type: 3}
+--- !u!137 &7019632420976753959 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 13700002, guid: a5674d01884853d4e8f2386a171e14d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 7019632420990449285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7019632420990577257 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400620, guid: a5674d01884853d4e8f2386a171e14d9,
