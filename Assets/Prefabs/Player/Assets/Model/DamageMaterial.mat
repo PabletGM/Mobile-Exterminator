@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: EllenMaterial
+  m_Name: DamageMaterial
   m_Shader: {fileID: 4800000, guid: e48dc3fe7602c914abada8cec9711f48, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -88,7 +88,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -101,9 +101,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Addition: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.98742133, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 21.415749, b: 23.96863, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissiveColor: {r: 2.9960785, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &796232414200082268
 MonoBehaviour:
