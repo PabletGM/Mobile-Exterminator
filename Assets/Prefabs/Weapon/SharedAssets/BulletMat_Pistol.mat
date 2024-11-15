@@ -8,17 +8,19 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BulletMat_Pistol
-  m_Shader: {fileID: 211, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: e48dc3fe7602c914abada8cec9711f48, type: 3}
   m_Parent: {fileID: 2100000, guid: b8de1541476abf0488b6536bb8354d0d, type: 2}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _EMISSION
-  m_InvalidKeywords: []
+  - _FLIPBOOKBLENDING_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses:
   - GRABPASS
   m_LockedProperties: 
@@ -28,6 +30,7 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.30685094, g: 0.91194963, b: 0.8482512, a: 1}
+    - _BaseColor: {r: 0.81761, g: 0.37674397, b: 0.35224065, a: 1}
+    - _Color: {r: 0, g: 0.9589195, b: 1, a: 1}
     - _EmissionColor: {r: 0.30498737, g: 0.913099, b: 0.84687346, a: 1}
   m_BuildTextureStacks: []
