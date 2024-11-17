@@ -145,11 +145,11 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2
-  m_Radius: 0.3
+  m_Radius: 0.25
   m_SlopeLimit: 45
   m_StepOffset: 0
-  m_SkinWidth: 0.0001
-  m_MinMoveDistance: 0.001
+  m_SkinWidth: 0.1
+  m_MinMoveDistance: 0.01
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!95 &4566592398935791021
 Animator:
@@ -243,9 +243,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mesh: {fileID: 7019632420976753959}
-  DamageEmissionColor: {r: 1, g: 0, b: 0, a: 0}
-  blinkSpeed: 20
-  EmissionColorPropertyName: _Addition
+  damageMaterial: {fileID: 2100000, guid: 6c2c77d7154378b4ba817d8c002ba300, type: 2}
+  originalMaterial: {fileID: 2100000, guid: 106ef1de46a5d2e45b30d5312f293a12, type: 2}
+  blinkSpeed: 2
   healthComponent: {fileID: 3105539174338318229}
   shaker: {fileID: 0}
 --- !u!1001 &7019632420990449285
