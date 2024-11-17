@@ -77,9 +77,9 @@ Material:
     - _Cutoff: 0.5
     - _DstBlend: 0
     - _DstBlendAlpha: 0
-    - _Glossiness: 0.5
+    - _Glossiness: 1
     - _GlossinessSource: 0
-    - _Metallic: 0
+    - _Metallic: 1
     - _OcclusionStrength: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
