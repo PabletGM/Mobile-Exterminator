@@ -65,8 +65,22 @@ public class Player : MonoBehaviour, ITeamInterface
         //health player linked methods to events
 
         healthComponent.onHealthChange += HealthChanged;
+
+        //method when player died
+        healthComponent.onHealthEmpty += StartDeathSequence;
+
         healthComponent.BroadcastHealthValueInmediately();
+
+       
         
+    }
+
+    private void StartDeathSequence()
+    {
+        //it is on the third layer, actions:
+        //it is layer 2(the 0, the 1 and the 2) and the weight is 1
+        animator.SetLayerWeight(2, 1);
+        animator.SetTrigger("Death");
     }
 
     private void HealthChanged(float health, float amount, float maxHealth)
