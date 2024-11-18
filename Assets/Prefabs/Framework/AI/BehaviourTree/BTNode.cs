@@ -86,4 +86,7 @@ public abstract class BTNode
     {
         return this;
     }
+
+    public virtual void Initialize() { }
+
 }

@@ -30,6 +30,8 @@ public abstract class BehaviourTree : MonoBehaviour
     private void SortTree()
     {
         int priorityCounter = 0;
+        //we initialize it
+        Root.Initialize();
         Root.SortPriority(ref priorityCounter);
 
     }

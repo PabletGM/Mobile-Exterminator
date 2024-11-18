@@ -27,4 +27,10 @@ public abstract class Decorator : BTNode
     {
         return child.Get();
     }
+
+    public override void Initialize()
+    {
+        base.Initialize();
+        child.Initialize();
+    }
 }
