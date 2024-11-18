@@ -28,6 +28,9 @@ public class Player : MonoBehaviour, ITeamInterface
     [SerializeField] HealthComponent healthComponent;
     [SerializeField] PlayerHealthBar healthBar;
 
+    [Header("UI")]
+    [SerializeField] UIManager _myUIManager;
+
     Vector2 moveInput;
     Vector2 aimInput;
 
@@ -81,6 +84,9 @@ public class Player : MonoBehaviour, ITeamInterface
         //it is layer 2(the 0, the 1 and the 2) and the weight is 1
         animator.SetLayerWeight(2, 1);
         animator.SetTrigger("Death");
+
+        //disable the  Gameplay UI functionality
+        _myUIManager.SetGameplayControlEnabled(false);
     }
 
     private void HealthChanged(float health, float amount, float maxHealth)
