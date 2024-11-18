@@ -6,7 +6,7 @@ using UnityEngine;
 public abstract class BTTask_Group : BTNode
 {
     BTNode Root;
-    BehaviourTree tree;
+    protected BehaviourTree tree;
 
     public BTTask_Group(BehaviourTree tree)
     {
@@ -22,7 +22,7 @@ public abstract class BTTask_Group : BTNode
 
     protected override NodeResult Update()
     {
-        return NodeResult.InProgress;
+        return Root.UpdateNode();
     }
 
     protected override void End()
@@ -41,5 +41,10 @@ public abstract class BTTask_Group : BTNode
     {
         base.Initialize();
         ConstructTree(out Root);
+    }
+
+    public override BTNode Get()
+    {
+        return Root.Get();
     }
 }
