@@ -11,8 +11,8 @@ public class Spitter : Enemy
         Animator.SetTrigger("Attack");
     }
 
-    //animation event on chomper attack melee
-    public void AttackPoint()
+    //animation event on spitter attack distance
+    public void AttackPointShoot()
     {
         //give permission to start the attack
         if (triggerDamageComp)
@@ -21,20 +21,20 @@ public class Spitter : Enemy
         }
     }
 
-    public void AttackEnd()
-    {
-        //give permission to start the attack
-        if (triggerDamageComp)
-        {
-            triggerDamageComp.SetDamageEnabled(false);
-        }
-    }
+    //public void AttackEnd()
+    //{
+    //    //give permission to start the attack
+    //    if (triggerDamageComp)
+    //    {
+    //        triggerDamageComp.SetDamageEnabled(false);
+    //    }
+    //}
 
-    protected override void Start()
-    {
-        base.Start();
-        //to initialize the team interface of the DamageComponent
-        //triggerDamageComponent and DamageComponent are parent and son so we can call the methods of DamageComp
-        triggerDamageComp.SetTeamInterfaceSource(this);
-    }
+    //protected override void Start()
+    //{
+    //    base.Start();
+    //    //to initialize the team interface of the DamageComponent
+    //    //triggerDamageComponent and DamageComponent are parent and son so we can call the methods of DamageComp
+    //    triggerDamageComp.SetTeamInterfaceSource(this);
+    //}
 }
