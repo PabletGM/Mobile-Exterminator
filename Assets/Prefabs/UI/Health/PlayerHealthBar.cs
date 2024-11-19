@@ -10,6 +10,8 @@ public class PlayerHealthBar : MonoBehaviour
     [SerializeField] Image amountImage;
     [SerializeField] TextMeshProUGUI amountText;
 
+
+
     internal void UpdateHealth(float health, float amount, float maxHealth)
     {
         amountImage.fillAmount = health/maxHealth;

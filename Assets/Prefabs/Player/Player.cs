@@ -66,8 +66,10 @@ public class Player : MonoBehaviour, ITeamInterface
         animator = GetComponent<Animator>();
 
         //health player linked methods to events
-
         healthComponent.onHealthChange += HealthChanged;
+
+        //damage UI player linked method to events
+        healthComponent.onTakeDamage += DamageToPlayer;
 
         //method when player died
         healthComponent.onHealthEmpty += StartDeathSequence;
@@ -76,6 +78,12 @@ public class Player : MonoBehaviour, ITeamInterface
 
        
         
+    }
+
+    private void DamageToPlayer(float health, float amount, float maxHealth, GameObject Instigator)
+    {
+        //damage effect
+        _myUIManager.SetDamageEffect();
     }
 
     private void StartDeathSequence()
@@ -91,7 +99,7 @@ public class Player : MonoBehaviour, ITeamInterface
 
     private void HealthChanged(float health, float amount, float maxHealth)
     {
-        healthBar.UpdateHealth(health, amount, maxHealth);
+        healthBar.UpdateHealth(health, amount, maxHealth); 
     }
 
     public void AttackPoint()

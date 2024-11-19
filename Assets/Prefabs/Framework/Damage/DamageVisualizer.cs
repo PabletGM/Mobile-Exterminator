@@ -10,6 +10,7 @@ using UnityEngine;
 public class DamageVisualizer : MonoBehaviour
 {
     // Renderer component of the object responsible for drawing the object in the scene
+
     [SerializeField] Renderer mesh;
     // Material to switch to when damage occurs
     [SerializeField] Material damageMaterial;
