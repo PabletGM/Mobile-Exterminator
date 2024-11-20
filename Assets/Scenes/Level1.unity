@@ -8310,6 +8310,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7473475935415994414, guid: b602eb05a0840ca4c9e4caf4a355365e,
+        type: 3}
+      propertyPath: playerHealthBar
+      value: 
+      objectReference: {fileID: 1940446121}
+    - target: {fileID: 7473475935415994414, guid: b602eb05a0840ca4c9e4caf4a355365e,
+        type: 3}
+      propertyPath: bloodyImageLarge
+      value: 
+      objectReference: {fileID: 21300000, guid: c9ff7c893e054e64b8ea0e97e9dd9515,
+        type: 3}
+    - target: {fileID: 7473475935415994414, guid: b602eb05a0840ca4c9e4caf4a355365e,
+        type: 3}
+      propertyPath: bloodyImageLittle
+      value: 
+      objectReference: {fileID: 21300000, guid: 0b38d549fd3642948b5756c29d874868,
+        type: 3}
+    - target: {fileID: 7473475935415994414, guid: b602eb05a0840ca4c9e4caf4a355365e,
+        type: 3}
+      propertyPath: bloodyImageMedium
+      value: 
+      objectReference: {fileID: 21300000, guid: a1a68197e730f27459ffbb424f79fcbc,
+        type: 3}
     - target: {fileID: 7628446765658588613, guid: b602eb05a0840ca4c9e4caf4a355365e,
         type: 3}
       propertyPath: damageEffect

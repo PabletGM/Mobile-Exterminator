@@ -5,8 +5,11 @@ using UnityEngine.UI;
 public class DamageEffectUI : DamageVisualizer
 {
 
-
     [SerializeField] private Image bloodyImage;
+    [SerializeField] private Sprite bloodyImageLittle;
+    [SerializeField] private Sprite bloodyImageMedium;
+    [SerializeField] private Sprite bloodyImageLarge;
+    [SerializeField] private PlayerHealthBar playerHealthBar;
 
     [Header("Parameters")]
     [SerializeField] private float durationOfEffectFadeIn = 0.5f; // Duración del FadeIn
@@ -17,35 +20,60 @@ public class DamageEffectUI : DamageVisualizer
 
     public void SetDamageUIImageEffect()
     {
-        // Si ya hay una corrutina ejecutándose, la detenemos para evitar conflictos
+        //If there is any coroutine, we stop it
         if (fadeRoutine != null)
         {
             StopCoroutine(fadeRoutine);
         }
 
-        // Iniciamos una nueva corrutina para el efecto
+        //Start a new coroutine for the effect
         fadeRoutine = StartCoroutine(FadeInOutCoroutine());
+    }
+
+    private Sprite GetBloodySprite(float damage)
+    {
+        //switch with conditions
+        return damage switch
+        {
+            < 0.3f => bloodyImageMedium,
+            < 0.7f => bloodyImageLarge,
+            <= 1f => bloodyImageLittle,
+            _ => null, 
+        };
+    }
+
+    private void SetBloodyImageSprite(Sprite sprite)
+    {
+        bloodyImage.sprite = sprite;
     }
 
     private IEnumerator FadeInOutCoroutine()
     {
-        // *** FADE IN ***
-        yield return FadeTo(opacity, durationOfEffectFadeIn);
+        //choose the image depending of the damage
+        Sprite bloodyImageSprite = GetBloodySprite(playerHealthBar.ActualLife);
 
-        // *** FADE OUT ***
-        yield return FadeTo(0f, durationOfEffectFadeOut);
+        if(bloodyImage)
+        {
+            //change the sprite
+            SetBloodyImageSprite(bloodyImageSprite);
+            // *** FADE IN ***
+            yield return FadeTo(opacity, durationOfEffectFadeIn);
 
-        // Limpia la referencia a la corrutina al finalizar
-        fadeRoutine = null;
+            // *** FADE OUT ***
+            yield return FadeTo(0f, durationOfEffectFadeOut);
+
+            // Limpia la referencia a la corrutina al finalizar
+            fadeRoutine = null;
+        } 
     }
 
     private IEnumerator FadeTo(float targetAlpha, float duration)
     {
-        // Obtenemos el color inicial de la imagen
+        //obtain the color of the initial image
         Color startColor = bloodyImage.color;
         float startAlpha = startColor.a;
 
-        // Tiempo transcurrido
+        //time passed
         float elapsed = 0f;
 
         while (elapsed < duration)
@@ -53,15 +81,15 @@ public class DamageEffectUI : DamageVisualizer
             elapsed += Time.deltaTime;
             float t = elapsed / duration;
 
-            // Interpolamos la opacidad (alpha)
+            //interpolate the opacity
             Color currentColor = bloodyImage.color;
             currentColor.a = Mathf.Lerp(startAlpha, targetAlpha, t);
             bloodyImage.color = currentColor;
 
-            yield return null; // Esperamos al siguiente frame
+            yield return null; //wait for next frame
         }
 
-        // Aseguramos el valor final exacto
+        //we make sure the final value
         Color finalColor = bloodyImage.color;
         finalColor.a = targetAlpha;
         bloodyImage.color = finalColor;
@@ -69,7 +97,7 @@ public class DamageEffectUI : DamageVisualizer
 
     protected override void TookDamage(float health, float amount, float maxHealth, GameObject instigator)
     {
-        // Activamos el efecto al recibir daño
+        //activate the damage effect
         SetDamageUIImageEffect();
     }
 }
