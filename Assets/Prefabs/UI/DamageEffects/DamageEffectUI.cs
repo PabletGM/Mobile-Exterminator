@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DamageEffectUI : DamageVisualizer
+public class DamageEffectUI : MonoBehaviour
 {
 
     [SerializeField] private Image bloodyImage;
@@ -93,11 +93,5 @@ public class DamageEffectUI : DamageVisualizer
         Color finalColor = bloodyImage.color;
         finalColor.a = targetAlpha;
         bloodyImage.color = finalColor;
-    }
-
-    protected override void TookDamage(float health, float amount, float maxHealth, GameObject instigator)
-    {
-        //activate the damage effect
-        SetDamageUIImageEffect();
     }
 }

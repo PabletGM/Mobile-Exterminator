@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2695564719383846673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6460650995685751225}
+  m_Layer: 0
+  m_Name: LaunchPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6460650995685751225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2695564719383846673}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.12, z: 0.85}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2703027861587964260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3506815079989199239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81,6 +112,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6967123519331762944}
+    - targetCorrespondingSourceObject: {fileID: 1524926115185062115, guid: 19149ee3cddb30b48898bbcdbf0a607a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6460650995685751225}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6403032068596921869, guid: 19149ee3cddb30b48898bbcdbf0a607a,
         type: 3}
@@ -197,6 +232,9 @@ MonoBehaviour:
   movementComponent: {fileID: 1529369344017934486}
   TeamID: 2
   triggerDamageComp: {fileID: 991045826227330061}
+  projectilePrefab: {fileID: 3033530081426990194, guid: 1bb67b87f4fd8c74d86bec6175d49335,
+    type: 3}
+  launchPoint: {fileID: 6460650995685751225}
 --- !u!114 &4542011633437775987
 MonoBehaviour:
   m_ObjectHideFlags: 0

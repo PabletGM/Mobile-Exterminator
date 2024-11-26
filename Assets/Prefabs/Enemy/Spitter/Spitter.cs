@@ -4,37 +4,30 @@ using UnityEngine;
 
 public class Spitter : Enemy
 {
-    [SerializeField] TriggerDamageComponent triggerDamageComp;
-    //override of the interface  IBehaviourTree method
+    [SerializeField] Projectile projectilePrefab;
+    [SerializeField] Transform launchPoint;
+
+    Vector3 Destination;
+
+
     public override void AttackTarget(GameObject target)
     {
         Animator.SetTrigger("Attack");
+        Destination = target.transform.position;
     }
 
     //animation event on spitter attack distance
     public void AttackPointShoot()
     {
-        //give permission to start the attack
-        if (triggerDamageComp)
-        {
-            triggerDamageComp.SetDamageEnabled(true);
-        }
+        Shoot();
     }
 
-    //public void AttackEnd()
-    //{
-    //    //give permission to start the attack
-    //    if (triggerDamageComp)
-    //    {
-    //        triggerDamageComp.SetDamageEnabled(false);
-    //    }
-    //}
+    public void Shoot()
+    {
+        //we create and instantiate the projectile at an specific point and rotation
+        Projectile newProjectile = Instantiate(projectilePrefab, launchPoint.position, launchPoint.rotation);
+        newProjectile.Launch(this.gameObject, Destination);
+    }
 
-    //protected override void Start()
-    //{
-    //    base.Start();
-    //    //to initialize the team interface of the DamageComponent
-    //    //triggerDamageComponent and DamageComponent are parent and son so we can call the methods of DamageComp
-    //    triggerDamageComp.SetTeamInterfaceSource(this);
-    //}
+    
 }
