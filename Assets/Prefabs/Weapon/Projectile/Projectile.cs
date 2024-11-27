@@ -9,6 +9,8 @@ public class Projectile : MonoBehaviour
     [SerializeField] float VerticalDistance;
     [SerializeField] Rigidbody rigidbody;
     [SerializeField] DamageComponent DamageComponent;
+    [SerializeField] ParticleSystem HitCollisionVFX;
+    [SerializeField] ParticleSystem ProjectileVFX;
 
     ITeamInterface instigatorTeamInterface;
     //know the gameObject that shoot to know the team and the destination of the projectile
@@ -70,6 +72,20 @@ public class Projectile : MonoBehaviour
 
     private void Explode()
     {
-        Destroy(gameObject);
+        HitVFXCollision();
+    }
+
+    private void HitVFXCollision()
+    {
+        // Activate the particle system
+        HitCollisionVFX.gameObject.SetActive(true);
+        ProjectileVFX.gameObject.SetActive(false);
+        rigidbody.constraints = RigidbodyConstraints.FreezePosition;
+
+        // Get the particle system's duration
+        float particleDuration = HitCollisionVFX.main.duration;
+
+        // Destroy the projectile after the particle system finishes playing
+        Destroy(gameObject, particleDuration);
     }
 }
