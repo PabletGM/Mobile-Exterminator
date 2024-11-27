@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Spitter_Body_Mat
+  m_Name: SpitterElectric_Body_MatDamaged
   m_Shader: {fileID: 4800000, guid: df778dfc69de7fb48809501a413b8bbf, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -130,9 +130,9 @@ Material:
     - _Use_Gradient: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EdgeColor1: {r: 0.5032754, g: 2.670157, b: 0, a: 1}
-    - _Emission: {r: 2.6390164, g: 0.04145052, b: 0, a: 1}
+    - _Color: {r: 1, g: 0.48235297, b: 0.64404285, a: 1}
+    - _EdgeColor1: {r: 0.3764706, g: 2, b: 0, a: 1}
+    - _Emission: {r: 42.224262, g: 0.6632083, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 0.25999996, g: 0.18999997, b: 0.15999997, a: 0}

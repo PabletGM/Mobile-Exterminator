@@ -99,10 +99,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3140023524955873653, guid: 19149ee3cddb30b48898bbcdbf0a607a,
+        type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 3a3cea986292c2445a02c973a48c7e8b, type: 3}
+    - target: {fileID: 3140023524955873653, guid: 19149ee3cddb30b48898bbcdbf0a607a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 4fb42db2798c6c3418b9b43d5a45e132,
+        type: 2}
     - target: {fileID: 6403032068596921869, guid: 19149ee3cddb30b48898bbcdbf0a607a,
         type: 3}
       propertyPath: m_Name
-      value: Spitter
+      value: SpitterFire
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -197,8 +208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mesh: {fileID: 6967123519345594916}
-  damageMaterial: {fileID: 2100000, guid: e4d6d73d47de4924e920cb45b52aa1d3, type: 2}
-  originalMaterial: {fileID: 2100000, guid: 0ef55e615d8ada44085ccce2062b647d, type: 2}
+  damageMaterial: {fileID: 2100000, guid: 621a0bb7468c22946a6b0c926722694b, type: 2}
+  originalMaterial: {fileID: 2100000, guid: 2f4ca31d522504842a25c00703c27696, type: 2}
   blinkSpeed: 2
   healthComponent: {fileID: 4253617575110131607}
 --- !u!114 &6118865697490992044
@@ -219,7 +230,7 @@ MonoBehaviour:
   behaviourTree: {fileID: 4542011633437775987}
   movementComponent: {fileID: 1529369344017934486}
   TeamID: 2
-  projectilePrefab: {fileID: 7248438060485950592, guid: 4fe229ea44421dd4dbc630af80d45394,
+  projectilePrefab: {fileID: 7248438060485950592, guid: 9f62183bf00e5474886d8808a0d0e845,
     type: 3}
   launchPoint: {fileID: 6460650995685751225}
 --- !u!114 &4542011633437775987
@@ -289,7 +300,7 @@ PrefabInstance:
     - target: {fileID: 13700000, guid: 3a3cea986292c2445a02c973a48c7e8b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0ef55e615d8ada44085ccce2062b647d, type: 2}
+      objectReference: {fileID: 2100000, guid: 2f4ca31d522504842a25c00703c27696, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
