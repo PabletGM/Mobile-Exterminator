@@ -1,26 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour, ITeamInterface
+public class Projectile : MonoBehaviour
 {
     //height or verticalDistance
     [SerializeField] float VerticalDistance;
-    [SerializeField] Rigidbody rigidbody; 
+    [SerializeField] Rigidbody rigidbody;
+    [SerializeField] DamageComponent DamageComponent;
 
-    int TeamID = -1;
-
+    ITeamInterface instigatorTeamInterface;
     //know the gameObject that shoot to know the team and the destination of the projectile
     //shoot the projectile in curve
     public void Launch(GameObject instigator, Vector3 destination)
     {
+        //set team before shooting
+        
         //get what team is the gameObject that shoots the projectile
-        ITeamInterface instigatorTeamInterface = instigator.GetComponent<ITeamInterface>();
+        instigatorTeamInterface = instigator.GetComponent<ITeamInterface>();
         //if team exists, gameObject exists
         if(instigatorTeamInterface != null )
         {
             //we put the team of the projectile
-            TeamID = instigatorTeamInterface.GetTeamID();
+            DamageComponent.SetTeamInterfaceSource(instigatorTeamInterface);
         }
 
         //calculate the time that last the projectil to reach the maximum height
@@ -55,5 +58,18 @@ public class Projectile : MonoBehaviour, ITeamInterface
         rigidbody.AddForce(flightVelocity, ForceMode.VelocityChange);
     }
 
-    public int GetTeamID(int teamID) { return teamID; }
+    //check if the hit is player and destroy it.
+    private void OnTriggerEnter(Collider other)
+    {
+        //check the relationship to check if it is player or anything not friendly so it should be hit
+        if(instigatorTeamInterface.GetRelationTowards(other.gameObject) != ETeamRelation.Friendly)
+        {
+            Explode();
+        }
+    }
+
+    private void Explode()
+    {
+        Destroy(gameObject);
+    }
 }
