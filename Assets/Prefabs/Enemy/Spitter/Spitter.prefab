@@ -130,18 +130,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4542011633437775987}
   m_SourcePrefab: {fileID: 100100000, guid: 19149ee3cddb30b48898bbcdbf0a607a, type: 3}
---- !u!114 &991045826227330061 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4425441193951010186, guid: 19149ee3cddb30b48898bbcdbf0a607a,
-    type: 3}
-  m_PrefabInstance: {fileID: 3506815079989199239}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae3bde9c61fbc28429fe89b4157631be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1529369344017934486 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2707750711431719185, guid: 19149ee3cddb30b48898bbcdbf0a607a,
@@ -231,8 +219,7 @@ MonoBehaviour:
   behaviourTree: {fileID: 4542011633437775987}
   movementComponent: {fileID: 1529369344017934486}
   TeamID: 2
-  triggerDamageComp: {fileID: 991045826227330061}
-  projectilePrefab: {fileID: 3033530081426990194, guid: 1bb67b87f4fd8c74d86bec6175d49335,
+  projectilePrefab: {fileID: 7248438060485950592, guid: 4fe229ea44421dd4dbc630af80d45394,
     type: 3}
   launchPoint: {fileID: 6460650995685751225}
 --- !u!114 &4542011633437775987
