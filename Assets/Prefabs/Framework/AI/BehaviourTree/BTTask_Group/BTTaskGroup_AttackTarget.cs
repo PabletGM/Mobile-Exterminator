@@ -6,10 +6,14 @@ public class BTTaskGroup_AttackTarget : BTTask_Group
 {
     float moveAcceptableDistance = 2f;
     float rotationAcceptableRadius = 10f;
-    public BTTaskGroup_AttackTarget(BehaviourTree tree, float moveAcceptableDistance = 2f, float rotationAcceptableRadius = 10f) : base(tree)
+
+    //allow a cooldown time
+    float attackCooldownDuration;
+    public BTTaskGroup_AttackTarget(BehaviourTree tree, float moveAcceptableDistance = 2f, float rotationAcceptableRadius = 10f, float attackCooldownDuration = 0) : base(tree)
     {
         this.moveAcceptableDistance = moveAcceptableDistance;
         this.rotationAcceptableRadius = rotationAcceptableRadius;
+        this.attackCooldownDuration = attackCooldownDuration;
     }
 
     protected override void ConstructTree(out BTNode Root)
@@ -27,12 +31,14 @@ public class BTTaskGroup_AttackTarget : BTTask_Group
         BTTask_RotateTowardsTarget rotateTowardsTarget = new BTTask_RotateTowardsTarget(tree, "Target", rotationAcceptableRadius);
         //attack
         BTTask_AttackTarget attackTarget = new BTTask_AttackTarget(tree, "Target");
+        //cooldown decorator that has the attack task
+        CooldownDecorator attackCooldownDecorator = new CooldownDecorator(tree, attackTarget, attackCooldownDuration);
 
 
         //add it to the sequencer
         attackTargetSeq.AddChild(moveToTarget);
         attackTargetSeq.AddChild(rotateTowardsTarget);
-        attackTargetSeq.AddChild(attackTarget);
+        attackTargetSeq.AddChild(attackCooldownDecorator);
 
         #endregion
 

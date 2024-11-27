@@ -13,7 +13,7 @@ public class SpitterBehaviour : BehaviourTree
         #region Attack
 
         //creation of the attackTarget group
-        BTTaskGroup_AttackTarget attackTargetGroupTask = new BTTaskGroup_AttackTarget(this, 5, 10f);
+        BTTaskGroup_AttackTarget attackTargetGroupTask = new BTTaskGroup_AttackTarget(this, 5, 10f, 2f);
         //added as child
         rootSelector.AddChild(attackTargetGroupTask);
 
