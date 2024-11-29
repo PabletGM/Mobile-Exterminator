@@ -58,6 +58,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1535891826362324299, guid: 5482775a127b71e43a66b2f4f656e028,
+        type: 3}
+      propertyPath: behaviourTree
+      value: 
+      objectReference: {fileID: 7662933833869684304}
     - target: {fileID: 2701762148436471092, guid: 5482775a127b71e43a66b2f4f656e028,
         type: 3}
       propertyPath: damageMaterial
@@ -68,6 +73,23 @@ PrefabInstance:
       propertyPath: originalMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 983aff4ebac34444a893b16865f66752, type: 2}
+    - target: {fileID: 4123137275722040421, guid: 5482775a127b71e43a66b2f4f656e028,
+        type: 3}
+      propertyPath: objectsToSpawn.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123137275722040421, guid: 5482775a127b71e43a66b2f4f656e028,
+        type: 3}
+      propertyPath: objectsToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 7527368762020476810, guid: ceecc29be66ecf94fbc48fb16009c005,
+        type: 3}
+    - target: {fileID: 4123137275722040421, guid: 5482775a127b71e43a66b2f4f656e028,
+        type: 3}
+      propertyPath: objectsToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 7527368762020476810, guid: f75d66ad1114f594b896bf8f9f98316d,
+        type: 3}
     - target: {fileID: 5541139202234384556, guid: 5482775a127b71e43a66b2f4f656e028,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -83,3 +105,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5482775a127b71e43a66b2f4f656e028, type: 3}
+--- !u!114 &7662933833869684304 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7002291294166553282, guid: 5482775a127b71e43a66b2f4f656e028,
+    type: 3}
+  m_PrefabInstance: {fileID: 825591866891467922}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7f8bf64d5f48945963478924f93dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

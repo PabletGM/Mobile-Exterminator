@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2016036527614628740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3431249407965229345}
+  m_Layer: 0
+  m_Name: spawnTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3431249407965229345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016036527614628740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.41}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1524926115185062115}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3664101735034786452
 GameObject:
   m_ObjectHideFlags: 0
@@ -51,6 +82,8 @@ GameObject:
   - component: {fileID: 3234058593926775204}
   - component: {fileID: 2701762148436471092}
   - component: {fileID: 1535891826362324299}
+  - component: {fileID: 4123137275722040421}
+  - component: {fileID: 7002291294166553282}
   m_Layer: 0
   m_Name: SpawnerChomper
   m_TagString: Untagged
@@ -73,6 +106,7 @@ Transform:
   m_Children:
   - {fileID: 4529345276060202629}
   - {fileID: 6045016254447032795}
+  - {fileID: 3431249407965229345}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &4849708794727429887
@@ -148,8 +182,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6403032068596921869}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 2732fe64dd2799f439fb845921df626b, type: 3}
-  m_Controller: {fileID: 9100000, guid: 7c0f266a1cd7b394da7af61d2b2e7268, type: 2}
+  m_Avatar: {fileID: 9000000, guid: b086f464bfe011e49aa66316b987f719, type: 3}
+  m_Controller: {fileID: 9100000, guid: 4930eb594d10c814aaae419b2a8af7c6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -269,9 +303,36 @@ MonoBehaviour:
   healthComponent: {fileID: 841424474056261136}
   animator: {fileID: 3140023524955873653}
   perceptionComponent: {fileID: 3405074724311364758}
-  behaviourTree: {fileID: 0}
+  behaviourTree: {fileID: 7002291294166553282}
   movementComponent: {fileID: 0}
   TeamID: 2
+--- !u!114 &4123137275722040421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6403032068596921869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bddb9540de057ca4696c40b3716dd7df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToSpawn:
+  - {fileID: 1029048113308760480, guid: 219298cd4798f2b449395c479f4519b8, type: 3}
+  spawnTransform: {fileID: 3431249407965229345}
+--- !u!114 &7002291294166553282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6403032068596921869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7f8bf64d5f48945963478924f93dda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6083957634845277744
 PrefabInstance:
   m_ObjectHideFlags: 0

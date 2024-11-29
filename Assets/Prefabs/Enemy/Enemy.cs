@@ -108,6 +108,8 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInter
 
     private void CalculateSpeed()
     {
+        if (movementComponent == null) return;
+        
         //check how much has moved from initial position
         Vector3 posDelta = transform.position - previousPosition;
         //calculate the speed = space / time
