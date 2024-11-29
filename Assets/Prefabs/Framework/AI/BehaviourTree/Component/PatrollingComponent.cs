@@ -5,7 +5,7 @@ using UnityEngine;
 public class PatrollingComponent : MonoBehaviour
 {
     //Array with Waypoints
-    [SerializeField] Transform[] patrolPoints;
+    public Transform[] patrolPoints;
     //patrol point index
     int currentPatrolPointIndex = -1;
 
