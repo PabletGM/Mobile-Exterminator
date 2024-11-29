@@ -5,7 +5,7 @@ using UnityEngine;
 public class BTTaskGroup_Patrolling : BTTask_Group
 {
     float acceptableDistance;
-    public BTTaskGroup_Patrolling(BehaviourTree tree, float acceptableDistance = 1) : base(tree)
+    public BTTaskGroup_Patrolling(BehaviourTree tree, float acceptableDistance = 2) : base(tree)
     {
         this.acceptableDistance = acceptableDistance;
     }
