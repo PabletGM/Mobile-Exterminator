@@ -8,6 +8,7 @@ public class SpawnComponent : MonoBehaviour
 {
     [SerializeField] GameObject[] objectsToSpawn;
     [SerializeField] Transform spawnTransform;
+    [SerializeField] ParticleSystem spawnerVFXSpawnTransform;
     Animator animator;
 
     [Header("Creation of PatrolPoints on NavMesh")]
@@ -43,14 +44,36 @@ public class SpawnComponent : MonoBehaviour
 
     public void SpawnImplementation()
     {
+        // Spawn VFX
+        SetVFXSpawn(true);
+
+        // Select a random object to spawn
         int randomPick = Random.Range(0, objectsToSpawn.Length);
         GameObject newSpawn = Instantiate(objectsToSpawn[randomPick], spawnTransform.position, spawnTransform.rotation);
 
-        // Check if there is any patrolPoint
+        // Check if there is any patrolPoint and assign random ones
         if (newSpawn.GetComponent<PatrollingComponent>().patrolPoints != null)
         {
             newSpawn.GetComponent<PatrollingComponent>().patrolPoints = GetRandomPatrolPointsFromArray(presetPatrolPoints, numberOfPatrolPoints);
         }
+
+        // Start a coroutine to deactivate the VFX after its duration
+        StartCoroutine(DeactivateVFXAfterDuration(spawnerVFXSpawnTransform.main.duration));
+    }
+
+    private void SetVFXSpawn(bool set)
+    {
+        // Activate or deactivate the VFX
+        spawnerVFXSpawnTransform.gameObject.SetActive(set);
+    }
+
+    private IEnumerator DeactivateVFXAfterDuration(float duration)
+    {
+        // Wait for the duration of the particle system
+        yield return new WaitForSeconds(duration);
+
+        // Deactivate the VFX
+        SetVFXSpawn(false);
     }
 
     private Transform[] GetRandomPatrolPointsFromArray(Transform[] sourcePoints, int count)
