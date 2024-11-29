@@ -321,6 +321,8 @@ MonoBehaviour:
   objectsToSpawn:
   - {fileID: 1029048113308760480, guid: 219298cd4798f2b449395c479f4519b8, type: 3}
   spawnTransform: {fileID: 3431249407965229345}
+  patrolPointRadius: 15
+  numberOfPatrolPoints: 3
 --- !u!114 &7002291294166553282
 MonoBehaviour:
   m_ObjectHideFlags: 0

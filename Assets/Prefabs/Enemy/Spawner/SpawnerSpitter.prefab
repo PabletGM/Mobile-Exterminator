@@ -75,6 +75,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 983aff4ebac34444a893b16865f66752, type: 2}
     - target: {fileID: 4123137275722040421, guid: 5482775a127b71e43a66b2f4f656e028,
         type: 3}
+      propertyPath: patrolPointRadius
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123137275722040421, guid: 5482775a127b71e43a66b2f4f656e028,
+        type: 3}
       propertyPath: objectsToSpawn.Array.size
       value: 2
       objectReference: {fileID: 0}

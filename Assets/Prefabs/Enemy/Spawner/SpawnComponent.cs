@@ -13,6 +13,10 @@ public class SpawnComponent : MonoBehaviour
     [Header("Creation of PatrolPoints on NavMesh")]
     [SerializeField] float patrolPointRadius = 10.0f;
     [SerializeField] int numberOfPatrolPoints = 3;
+
+    // Preset array of patrol points
+    [SerializeField] private Transform[] presetPatrolPoints; // Assign these in the Inspector
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,47 +43,33 @@ public class SpawnComponent : MonoBehaviour
 
     public void SpawnImplementation()
     {
-       int randomPick = Random.Range(0, objectsToSpawn.Length);
-       GameObject newSpawn = Instantiate(objectsToSpawn[randomPick], spawnTransform.position, spawnTransform.rotation);
-       
-        //check if there is any patrolPoint
-        if(newSpawn.GetComponent<PatrollingComponent>().patrolPoints!=null)
+        int randomPick = Random.Range(0, objectsToSpawn.Length);
+        GameObject newSpawn = Instantiate(objectsToSpawn[randomPick], spawnTransform.position, spawnTransform.rotation);
+
+        // Check if there is any patrolPoint
+        if (newSpawn.GetComponent<PatrollingComponent>().patrolPoints != null)
         {
-            newSpawn.GetComponent<PatrollingComponent>().patrolPoints = GenerateRandomPatrolPoints(numberOfPatrolPoints, patrolPointRadius);
+            newSpawn.GetComponent<PatrollingComponent>().patrolPoints = GetRandomPatrolPointsFromArray(presetPatrolPoints, numberOfPatrolPoints);
         }
     }
 
-    private Transform[] GenerateRandomPatrolPoints(int count, float radius)
+    private Transform[] GetRandomPatrolPointsFromArray(Transform[] sourcePoints, int count)
     {
-        List<Transform> patrolPoints = new List<Transform>();
+        List<Transform> randomPoints = new List<Transform>();
+        List<int> usedIndices = new List<int>();
 
         for (int i = 0; i < count; i++)
         {
-            Vector3 randomPoint = GetRandomNavMeshPoint(spawnTransform.position, radius);
-            if (randomPoint != Vector3.zero)
+            int randomIndex;
+            do
             {
-                // Create a new GameObject to represent the patrol point
-                GameObject patrolPoint = new GameObject($"PatrolPoint_{i}");
-                patrolPoint.transform.position = randomPoint;
-                patrolPoints.Add(patrolPoint.transform);
-            }
+                randomIndex = Random.Range(0, sourcePoints.Length);
+            } while (usedIndices.Contains(randomIndex)); // Avoid duplicate indices
+
+            usedIndices.Add(randomIndex);
+            randomPoints.Add(sourcePoints[randomIndex]);
         }
 
-        return patrolPoints.ToArray();
-    }
-
-    private Vector3 GetRandomNavMeshPoint(Vector3 center, float radius)
-    {
-        Vector3 randomDirection = Random.insideUnitSphere * radius;
-        randomDirection += center;
-
-        NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomDirection, out hit, radius, NavMesh.AllAreas))
-        {
-            return hit.position;
-        }
-
-        // Return zero vector if no valid point is found
-        return Vector3.zero;
+        return randomPoints.ToArray();
     }
 }
