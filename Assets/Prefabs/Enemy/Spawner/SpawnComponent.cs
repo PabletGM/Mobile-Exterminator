@@ -58,6 +58,7 @@ public class SpawnComponent : MonoBehaviour
         }
 
         // Start a coroutine to deactivate the VFX after its duration
+        StopAllCoroutines();
         StartCoroutine(DeactivateVFXAfterDuration(spawnerVFXSpawnTransform.main.duration));
     }
 
