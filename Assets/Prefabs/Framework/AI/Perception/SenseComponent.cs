@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -125,6 +126,24 @@ public abstract class SenseComponent : MonoBehaviour
         //check if there is any suscribe method to the event onPerceptionUpdated and invokes them with false parameter
         onPerceptionUpdated?.Invoke(stimuli, false);
 
+        
+    }
+
+    //add a new perception stimuli and call the methods when the perception changes
+    internal void AssignPerceivedStimuli(PerceptionStimuli targetStimuli)
+    {
+        //add the stimuli
+        PerceivableStimuli.Add(targetStimuli);
+        //call the event
+        onPerceptionUpdated?.Invoke(targetStimuli, true);
+
+        //TO DO -> WHAT IF WE ARE FORGETTING because we dont have the player near enough
+        //if(ForgettingRoutines.TryGetValue(targetStimuli, out Coroutine forgetCoroutine))
+        //{
+        //    //we stop that forget coroutine
+        //    StopCoroutine(forgetCoroutine);
+        //    ForgettingRoutines.Remove(targetStimuli);
+        //}
         
     }
 }

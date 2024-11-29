@@ -28,7 +28,12 @@ public class PerceptionComponent : MonoBehaviour
 
     private void Start()
     {
-        foreach(SenseComponent sense in senses)
+       
+    }
+
+    private void Awake()
+    {
+        foreach (SenseComponent sense in senses)
         {
             //add OnPerceptionUpdated method to the event onPerceptionUpdated
             sense.onPerceptionUpdated += SenseUpdated;
@@ -92,6 +97,15 @@ public class PerceptionComponent : MonoBehaviour
                 onPerceptionTargetChanged?.Invoke(targetStimuli.gameObject, false);
                 targetStimuli = null;  
             }
+        }
+    }
+
+    internal void AssignPerceivedStimuli(PerceptionStimuli targetStimuli)
+    {
+       //if there is any sense, assign the stimuli to the first spot of the array
+       if(senses.Length != 0)
+        {
+            senses[0].AssignPerceivedStimuli(targetStimuli);
         }
     }
 }

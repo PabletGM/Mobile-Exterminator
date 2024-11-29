@@ -51,6 +51,13 @@ public class SpawnComponent : MonoBehaviour
         int randomPick = Random.Range(0, objectsToSpawn.Length);
         GameObject newSpawn = Instantiate(objectsToSpawn[randomPick], spawnTransform.position, spawnTransform.rotation);
 
+        //ask if it has a spawn interface
+        ISpawnInterface spawnInterface = newSpawn.GetComponent<ISpawnInterface>();
+        if(spawnInterface != null )
+        {
+            spawnInterface.SpawnedBy(this.gameObject);
+        }
+
         // Check if there is any patrolPoint and assign random ones
         if (newSpawn.GetComponent<PatrollingComponent>().patrolPoints != null)
         {
@@ -65,7 +72,11 @@ public class SpawnComponent : MonoBehaviour
     private void SetVFXSpawn(bool set)
     {
         // Activate or deactivate the VFX
-        spawnerVFXSpawnTransform.gameObject.SetActive(set);
+        if(spawnerVFXSpawnTransform != null)
+        {
+            spawnerVFXSpawnTransform.gameObject.SetActive(set);
+        }
+        
     }
 
     private IEnumerator DeactivateVFXAfterDuration(float duration)

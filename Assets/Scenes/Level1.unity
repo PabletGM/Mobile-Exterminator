@@ -125,12 +125,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: bf336fc6eb156f24b8eb665fbfa7f80f, type: 2}
---- !u!198 &5132088 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6187937096459999528, guid: 5482775a127b71e43a66b2f4f656e028,
-    type: 3}
-  m_PrefabInstance: {fileID: 397812737}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &34697645 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5763983625328359715, guid: b602eb05a0840ca4c9e4caf4a355365e,
@@ -1126,33 +1120,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4123137275722040421, guid: 5482775a127b71e43a66b2f4f656e028,
-        type: 3}
-      propertyPath: spawnerVFXSpawnTransform
-      value: 
-      objectReference: {fileID: 5132088}
-    - target: {fileID: 4123137275722040421, guid: 5482775a127b71e43a66b2f4f656e028,
-        type: 3}
-      propertyPath: objectsToSpawn.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4123137275722040421, guid: 5482775a127b71e43a66b2f4f656e028,
-        type: 3}
-      propertyPath: objectsToSpawn.Array.data[1]
-      value: 
-      objectReference: {fileID: 7527368762020476810, guid: f75d66ad1114f594b896bf8f9f98316d,
-        type: 3}
-    - target: {fileID: 4123137275722040421, guid: 5482775a127b71e43a66b2f4f656e028,
-        type: 3}
-      propertyPath: objectsToSpawn.Array.data[2]
-      value: 
-      objectReference: {fileID: 7527368762020476810, guid: f75d66ad1114f594b896bf8f9f98316d,
-        type: 3}
-    - target: {fileID: 4123137275722040421, guid: 5482775a127b71e43a66b2f4f656e028,
-        type: 3}
-      propertyPath: presetPatrolPoints.Array.size
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4123137275722040421, guid: 5482775a127b71e43a66b2f4f656e028,
         type: 3}
@@ -8145,7 +8112,7 @@ PrefabInstance:
     - target: {fileID: 2197186331169391135, guid: 2e80a9ceaa0764148bca6d0e206d7066,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.78
+      value: 6.28
       objectReference: {fileID: 0}
     - target: {fileID: 2197186331169391135, guid: 2e80a9ceaa0764148bca6d0e206d7066,
         type: 3}
@@ -8155,7 +8122,7 @@ PrefabInstance:
     - target: {fileID: 2197186331169391135, guid: 2e80a9ceaa0764148bca6d0e206d7066,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.11
+      value: 18.09
       objectReference: {fileID: 0}
     - target: {fileID: 2197186331169391135, guid: 2e80a9ceaa0764148bca6d0e206d7066,
         type: 3}

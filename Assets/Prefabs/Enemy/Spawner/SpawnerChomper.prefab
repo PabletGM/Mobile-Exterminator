@@ -90,7 +90,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1524926115185062115
 Transform:
   m_ObjectHideFlags: 0
@@ -325,7 +325,16 @@ MonoBehaviour:
   spawnerVFXSpawnTransform: {fileID: 6187937096459999528}
   patrolPointRadius: 15
   numberOfPatrolPoints: 3
-  presetPatrolPoints: []
+  presetPatrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &7002291294166553282
 MonoBehaviour:
   m_ObjectHideFlags: 0

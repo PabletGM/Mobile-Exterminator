@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInterface
+public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInterface, ISpawnInterface
 {
     //reference of the HealthComponent
     [SerializeField] HealthComponent healthComponent;
@@ -34,7 +34,13 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInter
         get { return animator; }
         private set { animator = value; }
     }
-    
+
+    private void Awake()
+    {
+        //we suscribe a method to the event onPerceptionTargetChanged
+        perceptionComponent.onPerceptionTargetChanged += TargetChanged;
+    }
+
     protected virtual void Start()
     {
         //if there is healthComp
@@ -46,8 +52,7 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInter
             healthComponent.onTakeDamage += TakenDamage;
         }
 
-        //we suscribe a method to the event onPerceptionTargetChanged
-        perceptionComponent.onPerceptionTargetChanged += TargetChanged;
+        
         previousPosition = transform.position;
     }
 
@@ -152,5 +157,25 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInter
     public virtual void AttackTarget(GameObject target)
     {
         //override in child
+    }
+
+    //we want to make here when a enemy is spawned all the behaviour
+    public void SpawnedBy(GameObject spawnerGameObject)
+    {
+        //get the target of the spawner to give it to the childs they spawn so they share Target
+
+        //take behaviour tree of spawner
+        BehaviourTree spawnerBehaviourTree = spawnerGameObject.GetComponent<BehaviourTree>();
+        //take the target of the spawner(the player)
+        if(spawnerBehaviourTree != null && spawnerBehaviourTree.Blackboard.GetBlackboardData<GameObject>("Target", out GameObject spawnerTarget))
+        {
+            //the player has a stimuli, so if he has it, he can be targeted, and the enemy has a perceptionComponent to perceive the stimuli?
+            PerceptionStimuli  targetStimuli = spawnerTarget.GetComponent<PerceptionStimuli>();
+            if(perceptionComponent && targetStimuli)
+            {
+                //assign enemy perception component a new stimuli of the player
+                perceptionComponent.AssignPerceivedStimuli(targetStimuli);
+            }
+        }
     }
 }
