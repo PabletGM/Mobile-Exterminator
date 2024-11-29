@@ -67,7 +67,11 @@ public class BTTask_MoveToLocation : BTNode
 
     protected override void End()
     {
-        agent.isStopped = true;
+        if(agent!= null)
+        {
+            agent.isStopped = true;
+        }
+        
         base.End();
     }
 }
