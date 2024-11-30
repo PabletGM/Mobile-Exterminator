@@ -58,6 +58,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1535891826362324299, guid: 5482775a127b71e43a66b2f4f656e028,
+        type: 3}
+      propertyPath: DeathVFX.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535891826362324299, guid: 5482775a127b71e43a66b2f4f656e028,
+        type: 3}
+      propertyPath: DeathVFX.Array.data[2].size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535891826362324299, guid: 5482775a127b71e43a66b2f4f656e028,
+        type: 3}
+      propertyPath: DeathVFX.Array.data[2].particleSystem
+      value: 
+      objectReference: {fileID: 5985634496115995770, guid: 463cf9f7af4680240898f6aeba3fe3e6,
+        type: 3}
     - target: {fileID: 2561978751070973524, guid: 5482775a127b71e43a66b2f4f656e028,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.b

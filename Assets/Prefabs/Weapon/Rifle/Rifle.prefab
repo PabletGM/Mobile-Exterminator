@@ -4940,7 +4940,7 @@ MonoBehaviour:
   AttackRateMult: 2
   overrideController: {fileID: 22100000, guid: 9dab9ae4b2319174999d8aaff227c40b, type: 2}
   aimComp: {fileID: 8502763560629925713}
-  Damage: 5
+  Damage: 10
   bulletVFX: {fileID: 3140154916873376474}
 --- !u!114 &8502763560629925713
 MonoBehaviour:

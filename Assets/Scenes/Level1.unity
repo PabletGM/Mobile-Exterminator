@@ -8204,6 +8204,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnerSpitter
       objectReference: {fileID: 0}
+    - target: {fileID: 6019195963749893361, guid: 2e80a9ceaa0764148bca6d0e206d7066,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

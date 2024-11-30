@@ -22,6 +22,14 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInter
 
      Vector3 previousPosition;
 
+    private bool isDead = false;
+
+    public bool IsDead
+    {
+        get { return isDead; }
+        set { isDead = value; }
+    }
+
     public int GetTeamID()
     {
         return TeamID;
@@ -94,6 +102,8 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInter
         {
             //trigger death animation
             animator.SetTrigger("Dead");
+            //property dead
+            IsDead = true;
         }
     }
 

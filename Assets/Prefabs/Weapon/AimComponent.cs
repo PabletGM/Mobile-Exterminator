@@ -15,7 +15,11 @@ public class AimComponent : MonoBehaviour
         aimDir = GetAimDirection();
         if(Physics.Raycast(aimStart, aimDir, out RaycastHit hitInfo, aimRange, aimMask))
         {
-            return hitInfo.collider.gameObject;
+            if(hitInfo.collider.gameObject!= null)
+            {
+                return hitInfo.collider.gameObject;
+            }
+            
         }
 
         return null;
