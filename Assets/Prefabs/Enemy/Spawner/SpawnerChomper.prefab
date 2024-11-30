@@ -90,7 +90,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1524926115185062115
 Transform:
   m_ObjectHideFlags: 0
@@ -307,6 +307,13 @@ MonoBehaviour:
   behaviourTree: {fileID: 7002291294166553282}
   movementComponent: {fileID: 0}
   TeamID: 2
+  DeathVFX:
+  - particleSystem: {fileID: 7226888052703040407, guid: 7ec363c8df426644ea85f8d6d570561c,
+      type: 3}
+    size: 1.5
+  - particleSystem: {fileID: 4021103657954561960, guid: 5c755f9bc5253ea418e919994537dcc7,
+      type: 3}
+    size: 3
 --- !u!114 &4123137275722040421
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -99,10 +99,17 @@ public abstract class Enemy : MonoBehaviour, IBehaviourTreeInterface, ITeamInter
 
     public void OnDeathAnimationFinished()
     {
+        //call the dead virtual function
+        Dead();
         Destroy(gameObject);
     }
 
-//================================================================================================================================================
+    protected virtual void Dead()
+    {
+        
+    }
+
+    //================================================================================================================================================
 
     // Update is called once per frame
     void Update()

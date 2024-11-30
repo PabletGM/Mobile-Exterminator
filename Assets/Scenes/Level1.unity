@@ -1171,11 +1171,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnerChomper
       objectReference: {fileID: 0}
-    - target: {fileID: 6403032068596921869, guid: 5482775a127b71e43a66b2f4f656e028,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -238,6 +238,13 @@ MonoBehaviour:
   projectilePrefab: {fileID: 7248438060485950592, guid: 4fe229ea44421dd4dbc630af80d45394,
     type: 3}
   launchPoint: {fileID: 6460650995685751225}
+  DeathVFX:
+  - particleSystem: {fileID: 4021103657954561960, guid: 5c755f9bc5253ea418e919994537dcc7,
+      type: 3}
+    size: 1
+  - particleSystem: {fileID: 5515065002404772068, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c,
+      type: 3}
+    size: 0.5
 --- !u!114 &4542011633437775987
 MonoBehaviour:
   m_ObjectHideFlags: 0

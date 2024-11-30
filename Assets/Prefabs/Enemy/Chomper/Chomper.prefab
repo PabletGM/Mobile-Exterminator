@@ -158,6 +158,13 @@ MonoBehaviour:
   behaviourTree: {fileID: 1146995790867860845}
   movementComponent: {fileID: 8288899989344118460}
   TeamID: 2
+  DeathVFX:
+  - particleSystem: {fileID: 4021103657954561960, guid: 5c755f9bc5253ea418e919994537dcc7,
+      type: 3}
+    size: 3
+  - particleSystem: {fileID: 5515065002404772068, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c,
+      type: 3}
+    size: 0.5
   triggerDamageComp: {fileID: 7778166406771511847}
 --- !u!137 &3539077593766294843 stripped
 SkinnedMeshRenderer:
